@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CodeBlock from "@theme/CodeBlock";
 import { Line } from "./line";
+import style from "./GHCode.module.css";
 
 export default function GHCode({
   language,
@@ -11,6 +12,7 @@ export default function GHCode({
   endLine,
   showLineNumber = false,
   branch = "main",
+  readonly = false,
   ignore,
 }: {
   language?: string;
@@ -21,6 +23,7 @@ export default function GHCode({
   startLine?: number;
   endLine?: number;
   branch?: string;
+  readonly?: boolean;
   ignore?: string;
 }) {
   const [code, setCode] = useState(null);
@@ -61,11 +64,15 @@ export default function GHCode({
 
   endLine = endLine ?? lines.at(-1).lineNumber;
   lines = lines.filter(
-    (line: Line) => line.lineNumber >= startLine && line.lineNumber <= endLine
+    (line: Line) => line.lineNumber >= startLine && line.lineNumber <= endLine,
   );
 
   return (
-    <CodeBlock showLineNumbers={showLineNumber} language={language}>
+    <CodeBlock
+      showLineNumbers={showLineNumber}
+      language={language}
+      className={readonly ? style.readonly : ""}
+    >
       {lines.map((line: Line) => line.code).join("\n")}
     </CodeBlock>
   );
@@ -75,7 +82,7 @@ async function getCode(
   user: string,
   repo: string,
   filePath: string,
-  branch: string
+  branch: string,
 ): Promise<string> {
   var request = new XMLHttpRequest();
   return new Promise(function (resolve, reject) {
@@ -90,7 +97,7 @@ async function getCode(
     };
     request.open(
       "GET",
-      `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${filePath}`
+      `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${filePath}`,
     );
     request.send();
   });
@@ -108,14 +115,14 @@ function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
     const endIgnore: string[] = ignoreRange[1].split(":");
     const endIgnoreLine: number = +endIgnore[0];
     const endIgnoreLineObj: Line = adjustedLines.find(
-      (line: Line) => line.lineNumber == endIgnoreLine
+      (line: Line) => line.lineNumber == endIgnoreLine,
     );
     const endIgnoreColumn: number =
       endIgnore.length == 1 ? endIgnoreLineObj.code.length : +endIgnore[1];
     const replacementString: string =
       ignoreRange.length <= 2 ? "" : ignoreRange[2];
     const indexOfFirstLine: number = adjustedLines.indexOf(
-      adjustedLines.find((line: Line) => line.lineNumber == startIgnoreLine)
+      adjustedLines.find((line: Line) => line.lineNumber == startIgnoreLine),
     );
 
     adjustedLines = removeUnwantedLines(
@@ -124,7 +131,7 @@ function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
       endIgnoreLine,
       endIgnoreColumn,
       startIgnoreColumn,
-      endIgnoreLineObj.code
+      endIgnoreLineObj.code,
     );
 
     adjustedLines = adjustForColumns(
@@ -133,7 +140,7 @@ function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
       startIgnoreColumn,
       endIgnoreLine,
       endIgnoreColumn,
-      replacementString
+      replacementString,
     );
 
     if (replacementString != "") {
@@ -152,7 +159,7 @@ function removeUnwantedLines(
   endIgnoreLine: number,
   endIgnoreColumn: number,
   startIgnoreColumn: number,
-  endIgnoreCode: string
+  endIgnoreCode: string,
 ): Line[] {
   return lines.filter((line: Line) => {
     let startLine: number = startIgnoreLine;
@@ -173,7 +180,7 @@ function adjustForColumns(
   startIgnoreColumn: number,
   endIgnoreLine: number,
   endIgnoreColumn: number,
-  replacementString: string
+  replacementString: string,
 ): Line[] {
   return line.map((line: Line) => {
     if (line.lineNumber == startIgnoreLine) {

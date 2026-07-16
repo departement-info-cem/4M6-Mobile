@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from 'prism-react-renderer';
+import { themes } from "prism-react-renderer";
 
 const siteConfig = require("./config");
 
-const lightCodeTheme = themes.vsLight
-const darkCodeTheme = themes.vsDark
+const lightCodeTheme = themes.vsLight;
+const darkCodeTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,7 +14,7 @@ const config = {
   url: "https://info.cegepmontpetit.ca/",
   baseUrl: `/${siteConfig.nomUrl}/`,
   onBrokenLinks: "throw",
-  markdown: { hooks: { onBrokenMarkdownLinks: "warn" } },
+  markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: "warn" } },
   favicon: "img/favicon.ico",
 
   organizationName: "departement-info-cem",
@@ -26,6 +26,8 @@ const config = {
     defaultLocale: "fr",
     locales: ["fr"],
   },
+
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -42,6 +44,11 @@ const config = {
         },
       }),
     ],
+  ],
+
+  plugins: [
+    "@docusaurus/plugin-ideal-image",
+    require.resolve("./plugins/docs-metadata"),
   ],
 
   themeConfig:
@@ -94,11 +101,11 @@ const config = {
             href: `https://github.com/departement-info-cem/scripts-mobile/releases/download/Script/ScriptSharp.exe`,
             position: "right",
           },
-//          {
-//            label: "Skill Tree",
-//            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
-//            position: "right",
-//          },
+          //          {
+          //            label: "Skill Tree",
+          //            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
+          //            position: "right",
+          //          },
         ],
       },
       footer: {
