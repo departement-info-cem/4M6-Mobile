@@ -14,9 +14,9 @@ hide_table_of_contents: true
 
 Les injections (SQL et javascript) sont souvent les failles de sécurité qui viennent les premières en tête.
 
-20 minutes : suivez le fichier [sur les injections](https://github.com/departement-info-cem/4N6-Mobile/blob/main/code/SpringBootInjection/README.md) pour pratiquer les injections. 
+20 minutes : suivez le fichier [sur les injections](https://github.com/departement-info-cem/4M6-Mobile/blob/main/code/SpringBootInjection/README.md) pour pratiquer les injections. 
 
-Le code [fragile](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/fragile) et le code [solide](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootInjection/solide).   
+Le code [fragile](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootInjection/fragile) et le code [solide](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootInjection/solide).   
 
 :::
 
@@ -91,7 +91,7 @@ Vous devez créer un fichier **EncodageMotDePasse.md** dans votre repo, où vous
 
 ### Omnisus (Optionnel) (Avancé)
 
-Ouvrez le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Omnisus) et prenez le temps de lire le README.
+Ouvrez le projet [suivant](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/Omnisus) et prenez le temps de lire le README.
 
 Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion de note Omnisus.
 

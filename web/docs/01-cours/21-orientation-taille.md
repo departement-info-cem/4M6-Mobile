@@ -19,7 +19,7 @@ Vous pouvez essayer une tablette de 10 pouces en portrait/paysage ainsi qu'un pe
 - Est-ce que tous les éléments d'interface sont accessibles ou visibles?
 - Si c'est trop petit, comment rendre l'écran scrollable?
 
-Vous pouvez consulter le projet de démonstration [ComposePortraitPaysage](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposePortraitPaysage) qui montre comment gérer l'orientation portrait/paysage avec Jetpack Compose.
+Vous pouvez consulter le projet de démonstration [ComposePortraitPaysage](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposePortraitPaysage) qui montre comment gérer l'orientation portrait/paysage avec Jetpack Compose.
 
 :::
 

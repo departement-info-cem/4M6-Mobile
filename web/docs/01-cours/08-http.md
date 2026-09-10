@@ -124,7 +124,7 @@ Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service
 
 Chaque élément du LazyColumn doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'URL (champ html_url) (doit fonctionner).
 
-Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4N6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4N6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
+Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4M6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4M6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
 
 ##  DTO - Exercice de compréhension
 

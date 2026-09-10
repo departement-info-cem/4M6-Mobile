@@ -54,7 +54,7 @@ Exercice retiré parce que les nombres trop grands pour être reçus en Int pass
 
 <Column size="9">
 
-Le projet [suivant](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ChicType) a un problème. Votre mission sera de trouver le problème et de le corriger.
+Le projet [suivant](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ChicType) a un problème. Votre mission sera de trouver le problème et de le corriger.
 
 Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application Android fournie effectue un appel réseau au web service web qui se trouve à l'adresse suivante : [https://fourn6-mobile-prof.onrender.com/exos/chic/type/](https://fourn6-mobile-prof.onrender.com/exos/chic/type/). Le nombre aléatoire retourné par le web service devrait s'afficher dans un champ texte.
 

@@ -103,7 +103,7 @@ const config = {
           },
           //          {
           //            label: "Skill Tree",
-          //            href: `https://info.cegepmontpetit.ca/4N6-Mobile/file/4N6.html`,
+          //            href: `https://info.cegepmontpetit.ca/4M6-Mobile/file/4M6.html`,
           //            position: "right",
           //          },
         ],

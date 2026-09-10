@@ -18,13 +18,13 @@ C'est aussi la source de failles qu'on observe le plus souvent dans les projets 
 
 La raison principale est que le contrôle d'accès nécessite souvent du travail sans apporter de nouvelles fonctionnalités.
 
-(30 minutes) : passer à travers [l'activité sur le contrôle d'accès](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/README.md).
+(30 minutes) : passer à travers [l'activité sur le contrôle d'accès](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/README.md).
 
 On fournit 4 version plus ou moins sécurisées d'une même application de messagerie:
-- Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
-- Spring Security et authentification [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
-- Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
-- Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio)
+- Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
+- Spring Security et authentification [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
+- Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
+- Spring Security, authentification et extraction de l'utilisateur authentifié courant et test de propriété [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/04-TestProprio)
 
 :::
 
@@ -38,7 +38,7 @@ Nous commencerons par un examen papier de 20 minutes (27 minutes si 1/3 temps su
 
 Nous discuterons des différences entre les différents projets.
 
-Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF sur l'exemple [aucune sécurité](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar).
+Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF sur l'exemple [aucune sécurité](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar).
 
 - Vérifier si l'utilisateur est authentifié, si ce n'est pas le cas exception
 - Si c'est une lecture, il faut ensuite vérifier que l'utilisateur est le propriétaire (ou a le droit d'accès) sur l'objet demandé

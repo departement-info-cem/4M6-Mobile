@@ -12,13 +12,13 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Consultez la recette [Messages d'erreur](https://info.cegepmontpetit.ca/4N6-Mobile/recettes/messages-erreur).
+Consultez la recette [Messages d'erreur](https://info.cegepmontpetit.ca/4M6-Mobile/recettes/messages-erreur).
 
 Vous pouvez lire la doc d'Android sur les différents moyens d'afficher des erreurs dans un formulaire [ici](https://material.io/archive/guidelines/patterns/errors.html#errors-user-input-errors).
 
 Vous pouvez également regarder la doc technique sur les [snackbars](https://material.io/components/snackbars/android#using-snackbars) et les [dialogues](https://material.io/components/dialogs#behavior).
 
-Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/AffichageErreurCompose) et [erreurs dans retrofit](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofitCompose).
+Vous vous familiariserez avec les démos de la semaine [affichage d'erreurs](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/AffichageErreurCompose) et [erreurs dans retrofit](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ErreurRetrofitCompose).
 
 :::
 
@@ -52,7 +52,7 @@ Vous devez modifier votre application pour afficher soit le résultat si ça a f
 
 ### Exercice un errorBody mais pas deux
 
-En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ErreurRetrofitCompose), vous devez:
+En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ErreurRetrofitCompose), vous devez:
 - démarrer le projet
 - regarder la trace d'exécution dans Logcat
 - on devrait trouver une ligne qui commence par "le corps encore "

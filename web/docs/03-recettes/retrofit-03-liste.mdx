@@ -18,7 +18,7 @@ Regarder la [recette de base](retrofit-01-base) pour les étapes:
 
 Dans cette recette, nous allons voir comment récupérer une liste d'objets complexes depuis un service web.
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitObjets).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeRetrofitObjets).
 
 ## Repo.kt
 
@@ -41,7 +41,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - pour la demo, on a ajouté le **name** et le **id**
 
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/Repo.kt"
         />
 
@@ -51,7 +51,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - un accès récupère une liste d'objets complexes
 
         <GHCode
-              repo="4N6-Mobile"
+              repo="4M6-Mobile"
               filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/GitHubApi.kt"
              />
 
@@ -64,7 +64,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - on indique à Retrofit de s'en servir en ajoutant `GsonConverterFactory.create()`
 
         <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/api/RetrofitInstance.kt"
          />
 
@@ -77,7 +77,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
          3. ici on envoie la liste à une variable d'état pour affichage dans une LazyColumn
 
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
             startLine="42"
             endLine="54"
@@ -86,7 +86,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         Pour afficher la liste, on utilise une LazyColumn avec des Cards:
 
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitObjets/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
             startLine="98"
             endLine="121"
@@ -95,6 +95,6 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 ## Appel dans les tests
         On montre ici comment appeler la méthode depuis des tests automatiques
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitObjets/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
         />

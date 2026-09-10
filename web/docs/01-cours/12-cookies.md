@@ -20,7 +20,7 @@ URL de la vidéo mise à jour : https://fourn6-mobile-prof.onrender.com/exos/coo
 
 <Video url="https://www.youtube.com/watch?v=81456M4v1eI" />
 
-**[Code](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/Retrofit/05-Cookies)**
+**[Code](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/Retrofit/05-Cookies)**
 
 :::
 

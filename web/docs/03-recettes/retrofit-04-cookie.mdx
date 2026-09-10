@@ -21,13 +21,13 @@ Les cookies servent à relier plusieurs requêtes dans une session HTTP.
 
 Nous allons donc voir comment enchaîner une inscription/connexion et un appel à l'accueil des tâches.
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitPostEtCookies/).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeRetrofitPostEtCookies/).
 
 ## SessionCookieJar.kt
 
         On ajoute d'abord un cookie jar (un pot à cookies) pour que le client HTTP puisse stocker les cookies d'un appel à l'autre :
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/SessionCookieJar.kt"
         />
 
@@ -35,7 +35,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
         Au niveau de la configuration de Retrofit, on va ajouter la gestion des cookies.
         <GHCode
-            repo="4N6-Mobile"
+            repo="4M6-Mobile"
             filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/RetrofitInstance.kt"
         />
 
@@ -54,7 +54,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         - **accueilTache** qui récupère l'accueil (nécessite d'être connecté via cookie)
 
         <GHCode
-              repo="4N6-Mobile"
+              repo="4M6-Mobile"
               filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/KickMyBApi.kt"
              />
 
@@ -62,14 +62,14 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 ## RequeteInscription.kt
         On aura besoin de cette classe pour envoyer une requête d'inscription :
         <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/RequeteInscription.kt"
          />
 
 ## RequeteConnexion.kt
         De même pour la connexion :
         <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/api/RequeteConnexion.kt"
          />
 
@@ -78,7 +78,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         Dans l'interface Compose, on va pouvoir tester les trois appels:
 
         <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/main/java/ca/cem/composeretrofitbase/MainActivity.kt"
           startLine="81"
           endLine="171"
@@ -98,7 +98,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         Le test illustre deux scénarios d'utilisation :
 
         <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitPostEtCookies/app/src/androidTest/java/ca/cem/composeretrofitbase/api/KickMyBApiInstrumentationTest.kt"
 
          />

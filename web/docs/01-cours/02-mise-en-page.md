@@ -20,7 +20,7 @@ Vous devez penser à la mise en page des différents écrans de votre applicatio
 - Création d'une nouvelle tâche
 - Consultation du détail d'une tâche
 
-Regardez la démo [ComposeProportions](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeProportions) pour comprendre comment gérer les proportions en Compose.
+Regardez la démo [ComposeProportions](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeProportions) pour comprendre comment gérer les proportions en Compose.
 
 Pour les révisions, vous pouvez vous référer à la séance du cours 3N5:
 [Mise en page](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/b-mise-en-page)

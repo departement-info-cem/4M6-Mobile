@@ -12,7 +12,7 @@ hide_table_of_contents: true
 
 :::tip Avant la séance (2h)
 
-Vous devez vous familiariser avec la démo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold).
+Vous devez vous familiariser avec la démo [ComposeScaffold](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeScaffold).
 
 :::
 
@@ -22,7 +22,7 @@ Vous devez vous familiariser avec la démo [ComposeScaffold](https://github.com/
 
 :::info Séance
 
-Tu regarderas la Démo [ComposeScaffold](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeScaffold) pour voir comment le Scaffold fonctionne en Compose:
+Tu regarderas la Démo [ComposeScaffold](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeScaffold) pour voir comment le Scaffold fonctionne en Compose:
 - un TopBar avec un titre et des actions
 - un tiroir de navigation qui sort quand on appuie sur le bouton hamburger
 - un contenu

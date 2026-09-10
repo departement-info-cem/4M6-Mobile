@@ -16,7 +16,7 @@ ATTENTION : L'outil principal de débogage pour les appels réseaux est le *Netw
 
 Elle est recommandée par la doc standard d'Android pour faire des appels réseaux [source](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet?hl=fr#0).
 
-Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4N6-Mobile/tree/main/code/ComposeRetrofitBase/).
+Le code de cette recette est disponible [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeRetrofitBase/).
 
 ## AndroidManifest.xml
 
@@ -25,7 +25,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Cela se fait en ajoutant la balise suivante entre les balises `<manifest>` et `<application>` dans le fichier `AndroidManifest.xml`.
 
     <GHCode
-              repo="4N6-Mobile"
+              repo="4M6-Mobile"
               filePath="code/ComposeRetrofitBase/app/src/main/AndroidManifest.xml"
               startLine="2"
               endLine="7"
@@ -36,7 +36,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Il va falloir ajouter les dépendances permettant d'utiliser Retrofit dans le  `build.gradle.kts`.
 
     <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitBase/app/build.gradle.kts"
           startLine="53"
           endLine="59"
@@ -47,14 +47,14 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Il va falloir ajouter les versions de retrofit et okhttp que vous voulez utiliser dans la section [version] et les alias de dépendance dans la section [libraries].
 
     <GHCode
-              repo="4N6-Mobile"
+              repo="4M6-Mobile"
               filePath="code/ComposeRetrofitBase/gradle/libs.versions.toml"
               startLine="11"
               endLine="12"
               />
     
     <GHCode
-              repo="4N6-Mobile"
+              repo="4M6-Mobile"
               filePath="code/ComposeRetrofitBase/gradle/libs.versions.toml"
               startLine="29"
               endLine="32"
@@ -65,7 +65,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
     L'interface API indique à retrofit quelles actions on souhaite permettre:
     <GHCode
-      repo="4N6-Mobile"
+      repo="4M6-Mobile"
       filePath="code/ComposeRetrofitBase/app/src/main/java/ca/cem/composeretrofitbase/api/GitHubApi.kt"
      />
 
@@ -81,7 +81,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     La prochaine étape est de construire un objet pour envoyer les requêtes concrètes de Retrofit:
 
     <GHCode
-          repo="4N6-Mobile"
+          repo="4M6-Mobile"
           filePath="code/ComposeRetrofitBase/app/src/main/java/ca/cem/composeretrofitbase/api/RetrofitInstance.kt"
          />
 
@@ -102,6 +102,6 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
     Le plus simple pour s'assurer du bon fonctionnement est de faire un test automatique avec **execute**
 
     <GHCode
-      repo="4N6-Mobile"
+      repo="4M6-Mobile"
       filePath="code/ComposeRetrofitBase/app/src/androidTest/java/ca/cem/composeretrofitbase/api/GitHubApiInstrumentationTest.kt"
     />
