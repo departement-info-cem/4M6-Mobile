@@ -26,7 +26,7 @@ export default function GHCode({
   readonly?: boolean;
   ignore?: string;
 }) {
-  const [code, setCode] = useState(null);
+  const [code, setCode] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -51,7 +51,7 @@ export default function GHCode({
     language = filePath.split(".").at(-1);
   }
 
-  const stringLines: string[] = code.split("\n");
+  const stringLines: string[] = (code ?? "").split("\n");
   let lines: Line[] = stringLines.map((line: string, index: number) => {
     return {
       lineNumber: index + 1,
@@ -62,7 +62,7 @@ export default function GHCode({
     lines = adjustForIgnoredLines(lines, ignore);
   }
 
-  endLine = endLine ?? lines.at(-1).lineNumber;
+  endLine = endLine ?? lines.at(-1)!.lineNumber;
   lines = lines.filter(
     (line: Line) => line.lineNumber >= startLine && line.lineNumber <= endLine,
   );
@@ -116,13 +116,13 @@ function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
     const endIgnoreLine: number = +endIgnore[0];
     const endIgnoreLineObj: Line = adjustedLines.find(
       (line: Line) => line.lineNumber == endIgnoreLine,
-    );
+    )!;
     const endIgnoreColumn: number =
       endIgnore.length == 1 ? endIgnoreLineObj.code.length : +endIgnore[1];
     const replacementString: string =
       ignoreRange.length <= 2 ? "" : ignoreRange[2];
     const indexOfFirstLine: number = adjustedLines.indexOf(
-      adjustedLines.find((line: Line) => line.lineNumber == startIgnoreLine),
+      adjustedLines.find((line: Line) => line.lineNumber == startIgnoreLine)!,
     );
 
     adjustedLines = removeUnwantedLines(
