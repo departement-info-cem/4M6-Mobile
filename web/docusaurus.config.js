@@ -15,6 +15,14 @@ const config = {
   baseUrl: `/${siteConfig.nomUrl}/`,
   onBrokenLinks: "throw",
   markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: "warn" } },
+  stylesheets: [
+    { href: "https://fonts.googleapis.com", rel: "preconnect" },
+    { href: "https://fonts.gstatic.com", rel: "preconnect", crossorigin: "anonymous" },
+    {
+      href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap",
+      rel: "stylesheet",
+    },
+  ],
   favicon: "img/favicon.ico",
 
   organizationName: "departement-info-cem",
@@ -48,7 +56,7 @@ const config = {
 
   plugins: [
     "@docusaurus/plugin-ideal-image",
-    require.resolve("./plugins/docs-metadata"),
+    [require.resolve("./plugins/docs-metadata"), { docsDir: "docs/01-cours" }],
   ],
 
   themeConfig:
@@ -67,13 +75,15 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "cours/revision",
+            // Mène au prochain cours selon le calendrier de sidebars.js
+            type: "custom-prochainCours",
             position: "left",
+            sidebarId: "docs",
             label: "Cours",
           },
           {
-            type: "docSidebar",
+            // Mène au TP de la prochaine remise (className remise-tpN dans sidebars.js)
+            type: "custom-tpCourant",
             position: "left",
             sidebarId: "tp",
             label: "Travaux Pratiques",
