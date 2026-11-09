@@ -82,12 +82,27 @@ Le projet fil rouge (TP1, TP2, TP3) se fait avec Claude, mais chaque remise comp
         component: <MainDocsCalendar professorName="Joris" />,
     },
     {
+        id: "calendar-be",
+        label: "Calendrier Benoît",
+        icon: "📅",
+        component: <MainDocsCalendar professorName="Benoît" />,
+    },
+    {
         id: "schedule-jo",
         label: "Horaire Joris",
         icon: "🧑‍🏫",
         component: <WeeklySchedule
             title="Horaire Joris"
             data={require('./horaire-joris.json')}
+        />,
+    },
+    {
+        id: "schedule-be",
+        label: "Horaire Benoît",
+        icon: "🧑‍🏫",
+        component: <WeeklySchedule
+            title="Horaire Benoît"
+            data={require('./horaire-benoit.json')}
         />,
     }
     ]}

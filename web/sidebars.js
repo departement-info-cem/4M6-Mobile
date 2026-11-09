@@ -1,7 +1,7 @@
 // @ts-check
 
-// Dates H27 PROVISOIRES (lundi et mercredi, relâche la semaine du 1er mars) :
-// à remplacer par le vrai calendrier du groupe dès qu'il est connu.
+// Dates H27 PROVISOIRES (relâche la semaine du 1er mars) : à remplacer par le vrai
+// calendrier des groupes dès qu'il est connu. Joris : lundi et mercredi; Benoît : mardi et jeudi.
 let joris = {
   1: "2027-01-25",
   2: "2027-01-27",
@@ -35,6 +35,39 @@ let joris = {
   30: "2027-05-12",
 };
 
+let benoit = {
+  1: "2027-01-26",
+  2: "2027-01-28",
+  3: "2027-02-02",
+  4: "2027-02-04",
+  5: "2027-02-09",
+  6: "2027-02-11",
+  7: "2027-02-16",
+  8: "2027-02-18",
+  9: "2027-02-23",
+  10: "2027-02-25",
+  11: "2027-03-09",
+  12: "2027-03-11",
+  13: "2027-03-16",
+  14: "2027-03-18",
+  15: "2027-03-23",
+  16: "2027-03-25",
+  17: "2027-03-30",
+  18: "2027-04-01",
+  19: "2027-04-06",
+  20: "2027-04-08",
+  21: "2027-04-13",
+  22: "2027-04-15",
+  23: "2027-04-20",
+  24: "2027-04-22",
+  25: "2027-04-27",
+  26: "2027-04-29",
+  27: "2027-05-04",
+  28: "2027-05-06",
+  29: "2027-05-11",
+  30: "2027-05-13",
+};
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   // H27 : 30 séances. 🤖 = Claude Code, ✍️ = à la main, 📝 = test papier 10 min, 💻 = examen sans IA
@@ -44,7 +77,10 @@ const sidebars = {
       label: "1 - Plan de cours + le choc 🤖",
       id: "cours/choc-claude",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[1] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[1] }],
+          Benoît: [{ 1020: benoit[1] }],
+        },
       },
     },
     {
@@ -52,7 +88,10 @@ const sidebars = {
       label: "2 - Bilan du choc, IA web ou IA avec le code",
       id: "cours/revision",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[2] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[2] }],
+          Benoît: [{ 1020: benoit[2] }],
+        },
       },
     },
     {
@@ -60,7 +99,10 @@ const sidebars = {
       label: "3 - Mise en page 📝",
       id: "cours/mise-en-page",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[3] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[3] }],
+          Benoît: [{ 1020: benoit[3] }],
+        },
       },
     },
     {
@@ -70,7 +112,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP1",
         avancement: 0.2,
-        calendrier: { Joris: [{ 1010: joris[4] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[4] }],
+          Benoît: [{ 1020: benoit[4] }],
+        },
       },
     },
     {
@@ -80,7 +125,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP1",
         avancement: 0.5,
-        calendrier: { Joris: [{ 1010: joris[5] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[5] }],
+          Benoît: [{ 1020: benoit[5] }],
+        },
       },
     },
     {
@@ -88,7 +136,10 @@ const sidebars = {
       label: "6 - 6 langues 📝",
       id: "cours/multilingue",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[6] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[6] }],
+          Benoît: [{ 1020: benoit[6] }],
+        },
       },
     },
     {
@@ -99,7 +150,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP1 - Remis",
         avancement: 1,
-        calendrier: { Joris: [{ 1010: joris[7] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[7] }],
+          Benoît: [{ 1020: benoit[7] }],
+        },
       },
     },
     {
@@ -107,7 +161,10 @@ const sidebars = {
       label: "8 - Réseau : POST, DTO",
       id: "cours/http",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[8] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[8] }],
+          Benoît: [{ 1020: benoit[8] }],
+        },
       },
     },
     {
@@ -115,7 +172,10 @@ const sidebars = {
       label: "9 - Réseau réel 📝",
       id: "cours/http",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[9] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[9] }],
+          Benoît: [{ 1020: benoit[9] }],
+        },
       },
     },
     {
@@ -125,7 +185,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP2",
         avancement: 0.1,
-        calendrier: { Joris: [{ 1010: joris[10] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[10] }],
+          Benoît: [{ 1020: benoit[10] }],
+        },
       },
     },
     {
@@ -133,7 +196,10 @@ const sidebars = {
       label: "11 - Cycle de vie Spring",
       id: "cours/cycle-vie-spring",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[11] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[11] }],
+          Benoît: [{ 1020: benoit[11] }],
+        },
       },
     },
     {
@@ -141,7 +207,10 @@ const sidebars = {
       label: "12 - Spring par Claude 📝",
       id: "cours/spring-par-claude",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[12] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[12] }],
+          Benoît: [{ 1020: benoit[12] }],
+        },
       },
     },
     {
@@ -149,7 +218,10 @@ const sidebars = {
       label: "13 - Formatif intra 💻",
       id: "cours/formatif-intra",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[13] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[13] }],
+          Benoît: [{ 1020: benoit[13] }],
+        },
       },
     },
     {
@@ -158,7 +230,10 @@ const sidebars = {
       id: "cours/examen",
       className: "examen",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[14] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[14] }],
+          Benoît: [{ 1020: benoit[14] }],
+        },
       },
     },
     {
@@ -168,7 +243,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP2",
         avancement: 0.4,
-        calendrier: { Joris: [{ 1010: joris[15] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[15] }],
+          Benoît: [{ 1020: benoit[15] }],
+        },
       },
     },
     {
@@ -178,7 +256,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP2",
         avancement: 0.7,
-        calendrier: { Joris: [{ 1010: joris[16] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[16] }],
+          Benoît: [{ 1020: benoit[16] }],
+        },
       },
     },
     {
@@ -188,7 +269,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP2",
         avancement: 0.85,
-        calendrier: { Joris: [{ 1010: joris[17] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[17] }],
+          Benoît: [{ 1020: benoit[17] }],
+        },
       },
     },
     {
@@ -199,7 +283,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP2 - Remis",
         avancement: 1,
-        calendrier: { Joris: [{ 1010: joris[18] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[18] }],
+          Benoît: [{ 1020: benoit[18] }],
+        },
       },
     },
     {
@@ -209,7 +296,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP3",
         avancement: 0.1,
-        calendrier: { Joris: [{ 1010: joris[19] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[19] }],
+          Benoît: [{ 1020: benoit[19] }],
+        },
       },
     },
     {
@@ -217,7 +307,10 @@ const sidebars = {
       label: "20 - Déploiement réel II 📝",
       id: "cours/deploiement-reel",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[20] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[20] }],
+          Benoît: [{ 1020: benoit[20] }],
+        },
       },
     },
     {
@@ -227,7 +320,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP3",
         avancement: 0.3,
-        calendrier: { Joris: [{ 1010: joris[21] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[21] }],
+          Benoît: [{ 1020: benoit[21] }],
+        },
       },
     },
     {
@@ -235,7 +331,10 @@ const sidebars = {
       label: "22 - Cybersec : crypto",
       id: "cours/injection",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[22] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[22] }],
+          Benoît: [{ 1020: benoit[22] }],
+        },
       },
     },
     {
@@ -243,7 +342,10 @@ const sidebars = {
       label: "23 - Cybersec : contrôle d'accès 📝",
       id: "cours/controle-acces",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[23] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[23] }],
+          Benoît: [{ 1020: benoit[23] }],
+        },
       },
     },
     {
@@ -253,7 +355,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP3",
         avancement: 0.6,
-        calendrier: { Joris: [{ 1010: joris[24] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[24] }],
+          Benoît: [{ 1020: benoit[24] }],
+        },
       },
     },
     {
@@ -261,7 +366,10 @@ const sidebars = {
       label: "25 - CTF 🏴‍☠️",
       id: "cours/ctf",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[25] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[25] }],
+          Benoît: [{ 1020: benoit[25] }],
+        },
       },
     },
     {
@@ -269,7 +377,10 @@ const sidebars = {
       label: "26 - Durcir sa prod 📝",
       id: "cours/durcir-prod",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[26] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[26] }],
+          Benoît: [{ 1020: benoit[26] }],
+        },
       },
     },
     {
@@ -280,7 +391,10 @@ const sidebars = {
       customProps: {
         avancementLabel: "TP3 - Remis",
         avancement: 1,
-        calendrier: { Joris: [{ 1010: joris[27] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[27] }],
+          Benoît: [{ 1020: benoit[27] }],
+        },
       },
     },
     {
@@ -288,7 +402,10 @@ const sidebars = {
       label: "28 - Correction TP3, stratégie",
       id: "cours/correction-tp3",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[28] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[28] }],
+          Benoît: [{ 1020: benoit[28] }],
+        },
       },
     },
     {
@@ -296,7 +413,10 @@ const sidebars = {
       label: "29 - Formatif final 💻",
       id: "cours/formatif-final",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[29] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[29] }],
+          Benoît: [{ 1020: benoit[29] }],
+        },
       },
     },
     {
@@ -305,7 +425,10 @@ const sidebars = {
       id: "cours/examen",
       className: "examen",
       customProps: {
-        calendrier: { Joris: [{ 1010: joris[30] }] },
+        calendrier: {
+          Joris: [{ 1010: joris[30] }],
+          Benoît: [{ 1020: benoit[30] }],
+        },
       },
     },
     {

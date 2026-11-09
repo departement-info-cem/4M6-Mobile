@@ -1,0 +1,59 @@
+{
+  "startHour": "08:00",
+  "endHour": "18:00",
+  "slotMinutes": 60,
+  "name": "Benoît",
+  "categories": {
+    "4M6": {
+      "backgroundColor": "#dcfce7",
+      "textColor": "#14532d",
+      "darkBackgroundColor": "#14532d",
+      "darkTextColor": "#dcfce7"
+    },
+    "dispo": {
+      "backgroundColor": "#ffedd5",
+      "textColor": "#9a3412",
+      "darkBackgroundColor": "#9a3412",
+      "darkTextColor": "#ffedd5"
+    }
+  },
+  "days": [
+    "lundi",
+    "mardi",
+    "mercredi",
+    "jeudi",
+    "vendredi"
+  ],
+  "events": [
+    {
+      "id": "4M6-1020-a",
+      "day": "mardi",
+      "start": "13:00",
+      "end": "16:00",
+      "title": "Applications Mobiles",
+      "courseCode": "420-4M6-EM",
+      "courseGroup": "1020",
+      "room": "à confirmer",
+      "category": "4M6"
+    },
+    {
+      "id": "4M6-1020-b",
+      "day": "jeudi",
+      "start": "13:00",
+      "end": "16:00",
+      "title": "Applications Mobiles",
+      "courseCode": "420-4M6-EM",
+      "courseGroup": "1020",
+      "room": "à confirmer",
+      "category": "4M6"
+    },
+    {
+      "id": "dispo-1",
+      "day": "mercredi",
+      "start": "10:00",
+      "end": "12:00",
+      "title": "Disponibilité (à confirmer)",
+      "category": "dispo"
+    }
+  ]
+}
