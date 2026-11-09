@@ -48,6 +48,8 @@ Nous regarderons ensemble comment observer les logs de notre application déploy
 
 :::note Exercice
 
+<Etiquette type="main" />
+
 Vous devez faire le déploiement du serveur fourni par les profs sur votre compte Render (connexion via GitHub).
 
 :::

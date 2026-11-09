@@ -44,13 +44,13 @@ On discutera du cas où l'erreur vient de l'absence de signal ou de réseau dans
 
 :::note Exercices
 
-### Exercice Toast Snackbar
+### Exercice Toast Snackbar <Etiquette type="main" />
 
 Copier un de vos exercices qui envoyait une requête à un web service.
 
 Vous devez modifier votre application pour afficher soit le résultat si ça a fonctionné dans un **Snackbar** soit une erreur si le serveur est inaccessible (vous testerez avec l'appareil en mode avion) dans un **Toast**.
 
-### Exercice un errorBody mais pas deux
+### Exercice un errorBody mais pas deux <Etiquette type="main" />
 
 En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ErreurRetrofitCompose), vous devez:
 - démarrer le projet

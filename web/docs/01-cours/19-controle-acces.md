@@ -52,22 +52,22 @@ Nous verrons également comment rédiger une FAILLE, un EXPLOIT et un CORRECTIF 
 
 :::note Exercices
 
-##  Exercice formatif
+##  Exercice formatif <Etiquette type="main" />
 
 En préparation de l'examen de la prochaine séance, assurez-vous de savoir identifier et corriger les problèmes de contrôle d'accès dans une application Spring Boot.
 
-### Exercice Curl / postman
+### Exercice Curl / Bruno <Etiquette type="main" />
 
-Essaie de reproduire les requêtes décrite en curl dans l'activité avec Postman.
+Essaie de reproduire les requêtes décrite en curl dans l'activité avec Bruno.
 - création de 3 comptes utilisateurs alice bobo charlie
 - création de 2 messages entre alice et bob
 - requête de l'exploit de 01-OpenBar pour lire les messages de bob et charlie
 
-### Exercice Exploit
+### Exercice Exploit <Etiquette type="main" />
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la banche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
 
-### (Optionnel) Exercice Exploit2
+### (Optionnel) Exercice Exploit2 <Etiquette type="main" />
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 02-SpringSecurityBasic de l'activité dans un fichier `02-exploit.md`.
 

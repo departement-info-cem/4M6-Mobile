@@ -30,7 +30,7 @@ Vous devez regarder les vidéos ci-dessous :
 
 Nous allons montrer comment démarrer le serveur, comment mettre un point d'arrêt, à quel endroit est le code correspondant aux différentes URL.
 
-Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Postman.
+Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Bruno.
 
 :::
 
@@ -58,7 +58,7 @@ Le projet [suivant](https://github.com/departement-info-cem/4M6-Mobile/tree/main
 
 Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application Android fournie effectue un appel réseau au web service web qui se trouve à l'adresse suivante : [https://fourn6-mobile-prof.onrender.com/exos/chic/type/](https://fourn6-mobile-prof.onrender.com/exos/chic/type/). Le nombre aléatoire retourné par le web service devrait s'afficher dans un champ texte.
 
-1. Dans Postman, effectuez une requête vers le web service. Notez le type de donnée qui est dans le corps de la réponse.
+1. Dans Bruno, effectuez une requête vers le web service. Notez le type de donnée qui est dans le corps de la réponse.
 2. Ouvrez l'application Android fournie dans Android Studio. Essayez d'appuyer sur le bouton.
 3. Mettez des breakpoints et consultez le logcat pour tenter de comprendre pourquoi votre application n'arrive pas à traiter le nombre retourné par le web service.
 4. Effectuez un correctif pour que l'application fonctionne correctement. Montrez votre correctif à votre enseignant.e.
@@ -73,8 +73,8 @@ Lorsqu'on appuie sur le bouton "Obtenir un nombre aléatoire", l'application And
 
 </Row> -->
 
-##  Exercice Postman
+##  Exercice Bruno <Etiquette type="main" />
 
-En roulant le serveur [KickMyB](https://github.com/departement-info-cem/KickMyB-Server), vous devez préparer un ensemble de requêtes avec Postman pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
+En roulant le serveur [KickMyB](https://github.com/departement-info-cem/KickMyB-Server), vous devez préparer un ensemble de requêtes avec Bruno pour créer un compte, accéder à la liste des tâches de l'utilisateur, créer une tâche et mettre à jour une tâche.
 
 :::

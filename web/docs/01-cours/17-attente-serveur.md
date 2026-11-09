@@ -38,13 +38,13 @@ On regardera le code des exemples **[ici](https://github.com/departement-info-ce
 
 :::note Exercices
 
-### Exercice AttenteA
+### Exercice AttenteA <Etiquette type="main" />
 
 Créez un projet appelé **AttenteA** avec un bouton et un textview avec un fond vert.
 
 Faites la programmation nécessaire pour que quand on appuie sur le bouton, le textview soit remplacé par un indicateur de progression pendant une seconde puis que le textview revienne.
 
-### Exercice AttenteB
+### Exercice AttenteB <Etiquette type="main" />
 
 Créez un projet appelé **AttenteB**.
 

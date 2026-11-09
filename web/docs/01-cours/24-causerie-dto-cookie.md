@@ -44,7 +44,7 @@ Nous aurons une discussion pour répondre aux questions ci-contre. Le but est de
 
 :::note Exercice interactif
 
-##  Exercice formatif
+##  Exercice formatif <Etiquette type="main" />
 
 En préparation de l'examen de la prochaine séance, assurez-vous de bien comprendre l'utilité des DTO et le fonctionnement des cookies pour la gestion de session.
 
@@ -76,13 +76,13 @@ public class hero {
 }
 ```
 
-### Exercice 1 : Voir le héros
+### Exercice 1 : Voir le héros <Etiquette type="main" />
 
 Votre première tâche est de créer le DTO qui permettra d'afficher les informations suivantes. Notez que l'image affichée est aléatoire.
 
 ![miami](_24-causerie-dto-cookie/Miami1.png)
 
-### Exercice 2 : Transfer vs View Model
+### Exercice 2 : Transfer vs View Model <Etiquette type="main" />
 
 On veut maintenant créer une interface afin d'afficher quelques informations intéressantes. Le designer a fait un brouillon :
 
@@ -90,7 +90,7 @@ On veut maintenant créer une interface afin d'afficher quelques informations in
 
 Votre deuxième tâche est de créer le ou les DTO pour permettre d'afficher les informations ci-dessus. Réfléchissez à où devraient s'effectuer les calculs, de quelles informations le client a besoin, etc.
 
-### Exercice 3 : Création d'un héros
+### Exercice 3 : Création d'un héros <Etiquette type="main" />
 
 Lorsqu'un joueur se crée un nouveau héros, les actions suivantes doivent être exécutées :
 
@@ -140,7 +140,7 @@ public class profilInstaGroom {
 
 Psst ! Je me suis inspirée du vrai [Instagram](https://developers.facebook.com/docs/instagram-basic-display-api/reference/user) pour le modèle 😉
 
-### Exercice 4 : Boss final
+### Exercice 4 : Boss final <Etiquette type="main" />
 
 On veut afficher la liste de nos comptes favoris, c'est-à-dire tous ceux que l'on suit (*follow*). Pour chaque compte, on a son nom d'utilisateur, son alias, sa photo, s'il est vérifié et s'il a de nouvelles publications (*nombreMedia*).
 

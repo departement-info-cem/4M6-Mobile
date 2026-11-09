@@ -38,7 +38,7 @@ Recettes à faire:
 
 Nous allons montrer comment partir le serveur. Comment mettre un point d'arrêt. À quel endroit est le code correspondant aux différentes URLs.
 
-Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Postman.
+Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Bruno.
 
 :::
 
@@ -63,13 +63,13 @@ Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous 
 
 ::::note Exercices de la semaine
 
-## Exercice démarrer un serveur
+## Exercice démarrer un serveur <Etiquette type="main" />
 
 1. Créez un projet Spring Boot avec Spring Initializr
 2. En vous inspirant de la recette [Spring Boot 2](https://info.cegepmontpetit.ca/4M6-Mobile/recettes/spring-02-controleur), ajoutez un contrôleur qui retourne une chaîne de caractères
 3. Utiliser le navigateur pour accéder à l'adresse http://localhost:8080/
 
-## Exercice Post et PostMan
+## Exercice Post et Bruno <Etiquette type="main" />
 
 - en suivant la recette [Spring Boot 3](https://info.cegepmontpetit.ca/4M6-Mobile/recettes/spring-03-post-service-jpa), ajoutez un contrôleur sur l'url "/prout/envoyer" en méthode Post
 - on souhaite récupérer un paramètre **taille** entier dans la query ("/prout/envoyer?taille=150") optionnel
@@ -80,12 +80,12 @@ Le tout renvoie **texte** répété autant de fois que nécessaire pour atteindr
 - taille vaut 10
 - le contrôleur renvoie la string "pipopipopi"
 
-Pour tester votre code, utiliser Postman pour déclencher le contrôleur et valider votre code.
+Pour tester votre code, utiliser Bruno pour déclencher le contrôleur et valider votre code.
 
 
 
 
-## Exercice calcul et tests 
+## Exercice calcul et tests <Etiquette type="main" />
 
 Dans cet exercice, on veut:
 - que tu montes un serveur dans un dossier **CalculServeur**
@@ -95,10 +95,10 @@ public BigInteger fibonacci(int n){}
 ```
 - que tu écrives des tests unitaires pour cette méthode: on s'attend à ce que ça torche même si n est dans les 1000-2000
 - que tu implémentes un contrôleur qui prend **n** en paramètre et renvoie le nième nombre de Fibonacci (tu chercheras comment calculer ce nombre)
-- que tu testes ton contrôleur avec Postman
+- que tu testes ton contrôleur avec Bruno
 - l'url doit être **/fibo/10** pour 10 par exemple
 
-## Exercice toutes les méthodes
+## Exercice toutes les méthodes <Etiquette type="main" />
 
 Dans cet exercice, on veut:
 - que tu montes un serveur dans un dossier **CalculMethodes**
@@ -107,9 +107,9 @@ Dans cet exercice, on veut:
   - un POST sur l'url "/api/chose" qui ajoute une chose à la liste
   - un PUT sur l'url "/api/chose/\{id\}" qui ne fait rien
   - un DELETE sur l'url "/api/chose" qui vide la liste
-- Valide que chaque appel est fonctionnel avec POSTMAN
+- Valide que chaque appel est fonctionnel avec Bruno
 
-## Exercice de compréhension
+## Exercice de compréhension <Etiquette type="main" />
 
 Etant donné le code suivant pour un contrôleur Spring Boot
 

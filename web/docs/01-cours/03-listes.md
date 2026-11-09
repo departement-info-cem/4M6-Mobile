@@ -40,7 +40,7 @@ Vous devez commencer la programmation de la liste de votre projet.
 
 :::note Exercices de la semaine
 
-## Exercice Trace Bouton
+## Exercice Trace Bouton <Etiquette type="main" />
 - Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
 - En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 - Produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliquiez 2 fois sur le bouton.
@@ -78,7 +78,7 @@ Assurez-vous de bien comprendre quelles lignes de code sont exécutées à quel 
 
 Nous vous conseillons de valider que vous êtes capables de refaire quelques exercices de 3N5.
 
-##  Exercice ListeA
+##  Exercice ListeA <Etiquette type="main" />
 
 Créez un projet appelé **ListeA** qui affiche une liste contenant 1000 objets que vous générerez.
 

@@ -6,6 +6,16 @@ hide_table_of_contents: true
 
 # HTTP réponses et codes d'erreur, exceptions
 
+:::tip Séance 18 en trois parties
+
+1. Erreurs HTTP (cette page);
+2. [Erreurs dans l'interface graphique](erreur-gui);
+3. [Attente serveur](attente-serveur) : exercices AttenteA et AttenteB.
+
+Les trois servent directement au TP2 remis à la fin de la séance.
+
+:::
+
 <Row>
 
 <Column>
@@ -38,6 +48,6 @@ On expliquera la stratégie utilisée par le serveur fourni dans le cours.
 
 :::note Exercices
 
-### Exercice (optionnel bonus)
+### Exercice (optionnel bonus) <Etiquette type="main" />
 
 Vous devez faire une copie du projet serveur KickMyB et voir comment construire une réponse d'erreur HTTP en y indiquant un code 499 et un corps avec la String "Ayoye".

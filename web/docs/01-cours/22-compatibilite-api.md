@@ -39,8 +39,16 @@ On regardera comment utiliser la [documentation](https://developer.android.com/a
 
 :::note Exercices
 
-### Exercice A
+### Exercice A <Etiquette type="main" />
 
 Ouvrez 5 de vos exercices de la session et essayez de les rouler sur des versions antérieures de l'API. Pour chaque exercice, reculez de 5 versions (ex : API 30, 25, 20, 21 ...).
+
+:::tip Émulateur qui gèle au démarrage
+Sur certains postes (Mac Apple Silicon notamment), les images API 30 et moins restent figées au démarrage avec l'accélération graphique. Force le rendu logiciel :
+
+```bash
+emulator -avd API_30 -no-snapshot -gpu swiftshader_indirect
+```
+:::
 
 :::

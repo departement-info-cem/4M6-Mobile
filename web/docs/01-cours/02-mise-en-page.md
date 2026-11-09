@@ -46,7 +46,7 @@ Vous devrez compléter les mises en page des différents écrans de votre projet
 
 :::note Exercices de la semaine
 
-## Exercice Dessin
+## Exercice Dessin <Etiquette type="main" />
 Étant donné ce code, dessinez ce à quoi ressemblerait l'écran en mode portrait sur une feuille de papier.
 ```kotlin showLineNumbers
 class MainActivity : ComponentActivity() {
@@ -88,26 +88,26 @@ class MainActivity : ComponentActivity() {
 
 Une fois votre dessin terminé (et pas avant), créez un projet avec cet écran pour valider votre dessin.
 
-## Exercice MiseEnPageA
+## Exercice MiseEnPageA <Etiquette type="main" />
 
 Créez un projet appelé **MiseEnPageA** contenant un écran. Faites un champ de saisie pour le courriel, un pour le mot de passe, un bouton d'inscription et un bouton de connexion.
 
 Le mot de passe doit être caché (avec des points), l'interface doit être claire : on sait quoi taper à quel endroit.
 
-## Exercice MiseEnPageB
+## Exercice MiseEnPageB <Etiquette type="main" />
 
 Créez un projet appelé **MiseEnPageB** contenant 1 seul écran.
 Reproduisez la mise en page suivante en mode paysage : (n'utilisez pas de valeurs absolues, sauf pour du *padding* et des *margins*)
 
 ![Mise en page](_02-mise-en-page/miseenpage1.png)
 
-## Exercice MiseEnPageC
+## Exercice MiseEnPageC <Etiquette type="main" />
 
 Copiez votre projet **MiseEnPageB** dans un dossier **MiseEnPageC**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 
 ![Mise en page](_02-mise-en-page/miseenpage2.png)
 
-## Exercice MiseEnPageD
+## Exercice MiseEnPageD <Etiquette type="main" />
 
 Copiez votre projet **MiseEnPageC** dans un dossier **MiseEnPageD**. Modifiez votre projet de l'exercice précédent pour reproduire la mise en page suivante :
 

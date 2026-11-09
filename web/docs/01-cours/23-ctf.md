@@ -39,8 +39,29 @@ Vous aurez trois heures pour montrer avec succès que vous avez réussi à explo
 
 :::note Exercices
 
-### Exercice
+### Exercice <Etiquette type="main" />
 
 🐱‍💻 Piratez-moi !👨🏻‍💻🏴‍☠️
+
+### Exercice CTF entre équipes <Etiquette type="main" />
+
+Chaque équipe attaque le serveur de notes **déployé** d'une autre équipe (assignée par le professeur). Comme tout le monde respecte le même `API.md`, tes requêtes Bruno fonctionnent sur tous les serveurs.
+
+Le professeur te donne un compte **étudiant** et un compte **enseignant** sur le serveur ciblé. Objectifs, du plus simple au plus grave :
+
+1. un étudiant lit les notes d'un autre étudiant (accès horizontal);
+2. un étudiant crée une évaluation ou saisit une note (élévation de privilège : étudiant → enseignant);
+3. un enseignant modifie une note dans un groupe qui n'est pas le sien;
+4. un enseignant valide **sa propre** proposition de révision (contournement de la règle du collègue);
+5. la recherche d'étudiants par nom est-elle injectable (injection SQL)?
+6. un étudiant change **sa propre** note : le drapeau 🏴‍☠️.
+
+Règles d'engagement :
+
+- uniquement le serveur assigné, uniquement pendant la séance;
+- interdit : saturer le serveur (pas de déni de service), supprimer des données d'autres utilisateurs que tes comptes de test, attaquer l'hébergeur;
+- chaque faille trouvée est rapportée à l'équipe ciblée au format FAILLE / EXPLOIT / CORRECTIF.
+
+Les failles reçues servent à la séance [Durcir sa prod](durcir-prod).
 
 :::

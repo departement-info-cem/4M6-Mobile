@@ -59,7 +59,7 @@ Les systèmes exposés sont habituellement:
 
 :::note Exercices
 
-##  Exercice formatif
+##  Exercice formatif <Etiquette type="main" />
 
 En préparation de l'examen de la prochaine séance, assurez-vous de savoir identifier et corriger les failles d'injection SQL et Javascript.
 
@@ -72,7 +72,7 @@ Dans un fichier texte **InjectionJavascript.md**, entrainez-vous à :
 - Dans une session EXPLOIT, décrire étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquer comment vous avez comblé la faille.
 
-### Exercice ChiffSym
+### Exercice ChiffSym <Etiquette type="main" />
 Sur votre serveur KickMyB, en utilisant l'url `http://localhost:8080/h2-console` dans un navigateur, 
 vous pouvez ouvrir une console qui permet d'explorer la base de données.
 
@@ -81,7 +81,7 @@ Vous devez trouver le champ chiffré symétrique. Vous devez créer un fichier *
 - Est-ce que c'était nécessaire de chiffrer?
 - Y a-t-il un ou plusieurs champ(s) dans le projet qu'on devrait chiffrer?
 
-### Exercice HacherNePasHacher
+### Exercice HacherNePasHacher <Etiquette type="main" />
 En cherchant dans le projet KickMyB, vous devez trouver où se trouve la configuration du "password encoder". 
 Vous devez créer un fichier **EncodageMotDePasse.md** dans votre repo, où vous expliquerez :
 

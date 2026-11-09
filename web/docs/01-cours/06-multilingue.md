@@ -36,11 +36,11 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 :::note Exercices de la semaine
 
-## Exercice formatif
+## Exercice formatif <Etiquette type="main" />
 
 En préparation de l'examen de la prochaine séance, assurez-vous de bien comprendre comment gérer les ressources multilingues et les images dans Android.
 
-## Exercice Multilingue
+## Exercice Multilingue <Etiquette type="main" />
 
 Vous devez faire une application avec un titre (dans le topBar) et un TextView dans l'écran.
 
@@ -50,9 +50,27 @@ Vous devez faire une application avec un titre (dans le topBar) et un TextView d
 
 Votre application doit avoir un logo différent de celui par défaut.
 
-## Exercice Logo
+## Exercice Logo <Etiquette type="main" />
 
 Vous devez ajouter le logo [suivant](_06-multilingue/logo.jpeg) à votre projet ci-dessus.
+
+## Exercice 6 langues <Etiquette type="claude" />
+
+Dans le projet fil rouge, demande à Claude de traduire **toutes** les chaînes des deux apps en 6 langues : français, anglais, et 4 autres de ton choix (au moins une langue qui s'écrit de droite à gauche, ex. arabe ou hébreu).
+
+## Exercice Validation FR / EN <Etiquette type="main" />
+
+Toi seul peux valider le français et l'anglais :
+
+1. Relis **chaque** chaîne FR et EN dans l'app (pas seulement dans `strings.xml`) et corrige à la main.
+2. Vérifie qu'aucune chaîne n'est restée en dur dans le code :
+
+```bash
+grep -rn 'Text("' app/src/main/java
+```
+
+3. Passe l'émulateur dans chaque langue. En langue de droite à gauche, l'interface s'inverse-t-elle correctement?
+4. Note dans `IA.md` les 4 langues que tu **ne peux pas** valider, et comment un vrai projet le ferait.
 
 
 

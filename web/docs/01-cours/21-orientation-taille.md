@@ -47,7 +47,7 @@ On discutera des 2 grandes familles de mise en page : scrollable ou pas.
 
 :::note Exercices
 
-## Exercice Trace Lambda
+## Exercice Trace Lambda <Etiquette type="main" />
 
 Créez un fichier **trace-lambda.md** pour y mettre la réponse à cet exercice.
 En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),

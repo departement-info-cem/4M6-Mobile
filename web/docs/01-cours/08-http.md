@@ -67,18 +67,18 @@ On utilise alors des classes de transfert (**DTO**) qui permettent de transfére
 
 :::note Exercices de la semaine
 
-##  Exercice formatif
+##  Exercice formatif <Etiquette type="main" />
 
 En préparation de l'examen de la prochaine séance, assurez-vous de savoir effectuer des appels réseau avec Retrofit et d'afficher les résultats dans une interface graphique.
 
-##  Exercice RetrofitSimple
+##  Exercice RetrofitSimple <Etiquette type="main" />
 Créez un projet appelé **RetrofitSimple**. Le web service [ici](https://fourn6-mobile-prof.onrender.com/exos/long/double/4) prend un nombre et retourne son double.
 
 Vous devez démontrer un appel avec succès à ce web service dans une application Android depuis l'interface graphique.
 
 Par exemple, un écran avec un OutlinedTextField pour le nombre et un bouton pour déclencher l'appel. Au retour de la valeur (doublée), celle-ci est affichée soit dans un texte sur l'écran, soit dans un SnackBar.
 
-## Exercice RetrofitComplexe
+## Exercice RetrofitComplexe <Etiquette type="main" />
 
 Créez un projet appelé **RetrofitComplexe**. Le web service [ici](https://fourn6-mobile-prof.onrender.com/exos/truc/complexe?name=whippsie) prend un nom et retourne un objet complexe (remplacez whippsie par votre prénom dans l'URL).
 
@@ -86,14 +86,14 @@ Vous devez démontrer un appel avec succès à ce web service dans une applicati
 
 Par exemple, un écran avec un Text qui affiche les données retournées par l'appel.
 
-##  Exercice RetrofitListes
+##  Exercice RetrofitListes <Etiquette type="main" />
 
 Créez un projet appelé **RetrofitListes**. Le projet doit démarrer un écran coupé en 2 dans le sens de la hauteur. Chaque moitié est occupée par un LazyColumn qui sera peuplé par les appels suivants :
 
 - [Webservice 1](https://fourn6-mobile-prof.onrender.com/exos/long/list) renvoie une liste de Long. Chaque élément dans le LazyColumn est un simple champ texte où vous affichez la valeur du nombre.
 - [Webservice 2](https://fourn6-mobile-prof.onrender.com/exos/truc/list) renvoie une liste d'objets complexes. Chaque item du LazyColumn doit afficher les 2 champs simples ainsi que la taille de la liste.
 
-##  Exercice RetrofitEnvoiPost
+##  Exercice RetrofitEnvoiPost <Etiquette type="main" />
 
 Créez un projet appelé **RetrofitEnvoiPost**.
 
@@ -118,7 +118,7 @@ Tu vas envoyer une requête
 
 Tu peux afficher le résultat sur l'interface graphique du téléphone ou programmer directement un test unitaire synchrone.
 
-## Exercice RetrofitGithub
+## Exercice RetrofitGithub <Etiquette type="main" />
 
 Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service simple en GET sur l'URL [https://api.github.com/users/departement-info-cem/repos](https://api.github.com/users/departement-info-cem/repos).
 
@@ -126,7 +126,7 @@ Chaque élément du LazyColumn doit afficher les champs "name" et "description" 
 
 Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4M6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4M6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
 
-##  DTO - Exercice de compréhension
+##  DTO - Exercice de compréhension <Etiquette type="main" />
 
 Dans cet exercice, on vous donne la classe de modèle et on cherche les champs qu'on va mettre dans la classe de transfert (**PersonneDTO**).
 
@@ -156,7 +156,7 @@ Créez un fichier **dto.md** dans votre repo exercice pour garder votre réponse
 
 </Row>
 
-##  DTO - Exercice de compréhension 2
+##  DTO - Exercice de compréhension 2 <Etiquette type="main" />
 
 On reprend l'exercice précédent mais avec maintenant deux classes modèles. On cherche les champs qu'on va mettre dans la classe de transfert (**CompteDTO**) toujours avec la même interface graphique.
 
@@ -187,3 +187,9 @@ Créez un fichier **dto2.md** dans votre repo pour garder votre réponse avec le
 
 
 :::
+
+## Exercice couche réseau du fil rouge <Etiquette type="claude" />
+
+Quand RetrofitGithub fonctionne **à la main**, demande à Claude la couche réseau du projet fil rouge (interface Retrofit, DTO, singleton) dans le module `:commun`, en respectant le contrat `API.md`.
+
+Vérifie ensuite à la main : pour chaque DTO, compare **champ par champ** avec le JSON réel reçu (Bruno). Les pièges fréquents : `Long` devenu `Int`, champ nullable déclaré non-nullable, nom de champ différent.

@@ -10,12 +10,14 @@ Pendant les séances d'intégration, il n'y a pas de nouveau contenu. Le but est
 
 :::info Exercices à compléter.
 
-Tu dois compléter le TP2.
+<Etiquette type="claude" /> Avec Claude, intègre tes deux apps Android au serveur de notes ([TP2](../tp/tp2)).
+
+<Etiquette type="main" /> Pour **une** route de ton API, écris à la main la trace complète : clic dans l'app → appel Retrofit → contrôleur → service → BD → réponse → affichage.
 
 :::
 
 :::note Exercice complémentaire
-## Exercice préparatoire : Trace client-serveur
+## Exercice préparatoire : Trace client-serveur <Etiquette type="main" />
 
 **Contexte** : Le code suivant met en place une interaction client-serveur entre une application Android et un serveur Spring Boot. L’objectif est de permettre l’affichage des détails d’une tâche à partir de son identifiant (id). L’interaction est initiée lorsque l’utilisateur sélectionne une tâche dans l'application.
 

@@ -40,7 +40,7 @@ Tu regarderas la Démo [ComposeScaffold](https://github.com/departement-info-cem
 
 [Le formatif](../cours/formatif-examen-papier-1) est disponible pour se préparer.
 
-## Exercice Trace Portée
+## Exercice Trace Portée <Etiquette type="main" />
 Créez un fichier **trace-portee.md** pour y mettre la réponse à cet exercice.  
 En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 produisez la trace d'exécution du code suivant **sans exécuter le code**.
