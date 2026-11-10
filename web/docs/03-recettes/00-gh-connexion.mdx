@@ -1,0 +1,36 @@
+---
+title: Connecter gh à GitHub
+description: Valider l'installation de gh, se connecter, tester
+hide_table_of_contents: true
+---
+
+# Connecter `gh` à GitHub
+
+`gh` est l'outil GitHub en ligne de commande. Claude s'en sert pour pousser, ouvrir des PR et lire les résultats.
+
+Au labo, la connexion est perdue à chaque déconnexion : refais l'étape 2 en début de séance.
+
+## 1. Valider l'installation
+
+```bash
+gh --version
+```
+
+Si la commande est introuvable chez toi : `winget install --id GitHub.cli` (Windows) ou `brew install gh` (Mac), puis ouvre un **nouveau** terminal.
+
+## 2. Se connecter
+
+```bash
+gh auth login --web --git-protocol https
+```
+
+Copie le code à 8 caractères affiché, appuie sur Entrée, colle-le dans la page GitHub qui s'ouvre et autorise.
+
+## 3. Tester
+
+```bash
+gh auth status
+gh repo list --limit 5
+```
+
+Tu dois voir `Logged in to github.com account <toi>`, puis tes repos.

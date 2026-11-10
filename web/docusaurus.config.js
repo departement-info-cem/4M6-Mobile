@@ -100,17 +100,6 @@ const config = {
             position: "right",
             label: "Mantras",
           },
-          {
-            type: "doc",
-            docId: "problemes-frequents",
-            position: "right",
-            label: "Problèmes",
-          },
-          {
-            label: "Installator",
-            href: `https://github.com/departement-info-cem/scripts-mobile/releases/download/Script/ScriptSharp.exe`,
-            position: "right",
-          },
           //          {
           //            label: "Skill Tree",
           //            href: `https://info.cegepmontpetit.ca/4M6-Mobile/file/4M6.html`,

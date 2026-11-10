@@ -46,7 +46,7 @@ Ce repo contiendra **tous les exercices** de la session, un dossier par exercice
 git clone https://github.com/<toi>/4M6-exercices-<ton-nom>.git
 ```
 
-3. Connecte l'outil `gh` à ton compte pour que Claude puisse commit, push et lire le résultat :
+3. Connecte l'outil `gh` à ton compte pour que Claude puisse commit, push et lire le résultat (recettes [gh](../03-recettes/00-gh-connexion.mdx) et [Claude Code](../03-recettes/01-claude-cli.mdx)) :
 
 ```bash
 gh auth login

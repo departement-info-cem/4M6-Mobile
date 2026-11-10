@@ -70,3 +70,11 @@
   flex: 0 0 100%;
   max-width: 100%;
 }
+/* Sur téléphone, les colonnes s'empilent */
+@media (max-width: 996px) {
+  .depinfo-col,
+  [class*="depinfo-col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

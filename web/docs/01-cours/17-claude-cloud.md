@@ -28,7 +28,7 @@ Les postes du labo s'effacent quand tu te déconnectes. Une session `claude` lan
 
 Une **session cloud** de Claude Code tourne dans une machine virtuelle d'Anthropic : elle clone ton repo GitHub, travaille, lance les tests, pousse une **branche**. Rien à garder allumé. Tu la suis depuis [claude.ai/code](https://claude.ai/code) ou l'app mobile (onglet **Code**). C'est inclus dans Claude Pro, et ça compte dans **le même quota** que le reste.
 
-Au labo, la connexion Claude est perdue à chaque déconnexion : `claude auth login` en début de séance.
+Au labo, la connexion Claude est perdue à chaque déconnexion : `claude auth login` en début de séance ([recette](../03-recettes/01-claude-cli.mdx)).
 
 :::
 

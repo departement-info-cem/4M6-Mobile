@@ -1,0 +1,53 @@
+---
+title: Installer Claude Code (CLI)
+description: Installer claude sur le poste et se connecter avec son compte Claude Pro
+hide_table_of_contents: true
+---
+
+# Installer Claude Code (CLI)
+
+## 1. Installer
+
+Windows (PowerShell) :
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+Mac ou Linux :
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Ouvre un **nouveau** terminal, puis vérifie :
+
+```bash
+claude --version
+```
+
+Sur Windows, Claude Code a besoin de [Git pour Windows](https://git-scm.com/downloads/win).
+
+## 2. Se connecter
+
+```bash
+claude auth login
+```
+
+Le navigateur s'ouvre : connecte-toi avec **ton compte Claude Pro** et autorise. Vérifie :
+
+```bash
+claude auth status
+```
+
+Au labo, refais `claude auth login` à chaque séance : le poste s'efface à la déconnexion.
+
+## 3. Tester
+
+Dans le dossier de ton repo :
+
+```bash
+claude "Résume ce repo en 3 lignes"
+```
+
+Référence : [Installation de Claude Code](https://code.claude.com/docs/en/setup)

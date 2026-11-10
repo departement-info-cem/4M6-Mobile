@@ -4,11 +4,9 @@ slug: /
 hide_table_of_contents: true
 ---
 
+import PlanSeances from './_plan-seances.mdx';
+
 # Accueil
-
-<Row>
-
-<Column>
 
 Bienvenue au cours de 4M6 - Applications mobiles, version **hiver 2027**!
 
@@ -22,13 +20,19 @@ Le contenu des cours ainsi que les énoncés de TP sont disponibles dans les ong
 
 Nous utiliserons aussi des [recettes](recettes/messages-erreur) pour des tâches spécifiques.
 
-À chaque cours, exécute Installator. Cela ne fonctionne qu'au collège.
+<Row>
 
-:::tip Avant chaque séance :
+<Column>
+
+:::tip Avant chaque séance
 
 Tu as du travail préparatoire pour découvrir la matière par toi-même. Il s'agira d'une page web à lire, d'une vidéo à suivre et/ou d'exercices à faire. Cela représente environ 2 heures de travail.
 
 :::
+
+</Column>
+
+<Column>
 
 :::info Séance
 
@@ -46,6 +50,10 @@ Ensuite, travail sur :
 
 :::
 
+</Column>
+
+<Column>
+
 :::caution IA - Claude Code
 
 Chaque exercice porte une étiquette :
@@ -60,18 +68,22 @@ Le projet fil rouge (TP1, TP2, TP3) se fait avec Claude, mais chaque remise comp
 :::
 
 </Column>
- 
 
-
-<Column>
+</Row>
 
 ## Plan des séances
 
 <DocsViewer
     tabs={[
     {
+        id: "seances",
+        label: "Séances et évaluations",
+        icon: "📝",
+        component: <PlanSeances />,
+    },
+    {
         id: "grid",
-        label: "Cours",
+        label: "Cartes",
         icon: "📋",
         component: <MainDocsGrid />,
     },
@@ -106,48 +118,5 @@ Le projet fil rouge (TP1, TP2, TP3) se fait avec Claude, mais chaque remise comp
         />,
     }
     ]}
-    defaultTabId="grid"
+    defaultTabId="seances"
 />
-
-## Évaluations par séance
-
-Légende : <Etiquette type="claude" /> <Etiquette type="main" /> 📝 test papier 10 min · 💻 examen sans IA
-
-| Séance | Contenu | Évaluations |
-|---|---|---|
-| 1 | [Plan de cours + le choc](cours/choc-claude) 🤖 | Repo d'exercices créé |
-| 2 | [Bilan du choc, IA web ou IA avec le code, révision Compose](cours/revision) 🤖✍️ | Établissement choisi (fil rouge) |
-| 3 | [Mise en page](cours/mise-en-page) ✍️ | 📝 [T1 : valeurs, expressions, types](cours/tests-papier) |
-| 4 | [Listes, navigation, Scaffold](cours/listes) ✍️🤖 | TP1 à 20% |
-| 5 | [Identité visuelle](cours/identite-visuelle), [orientation](cours/orientation-taille) ✍️🤖 | TP1 à 50% |
-| 6 | [6 langues](cours/multilingue) 🤖✍️ | 📝 [T2 : portée, lambdas, état](cours/tests-papier) |
-| 7 | [HTTP / Retrofit](cours/http) ✍️ | **TP1 remise (10%)** |
-| 8 | [Réseau : POST, DTO](cours/http) ✍️ | |
-| 9 | [Réseau réel](cours/http) ✍️🤖 | 📝 [T3 : trace client-serveur, DTO](cours/tests-papier) |
-| 10 | [Spring Boot](cours/spring-java) ✍️ | TP2 à 10% |
-| 11 | [Cycle de vie Spring](cours/cycle-vie-spring) ✍️ | |
-| 12 | [Spring par Claude](cours/spring-par-claude), [cookies](cours/cookies) 🤖✍️ | 📝 [T4 : cycle de vie, trace serveur](cours/tests-papier) |
-| 13 | [💻 Formatif intra](cours/formatif-intra) | formatif |
-| 14 | [💻 Examen intra](cours/examen) | **Intra (15%)** |
-| 15 | [Débogage, Claude et les logs](cours/debogage) ✍️🤖 | TP2 à 40% |
-| 16 | [Worktrees : Claude en parallèle](cours/worktrees), [système légacy](cours/systeme-legacy) 🤖✍️ | TP2 à 70% |
-| 17 | [Claude hors du cours : le cloud](cours/claude-cloud) ✍️🤖 | TP2 à 85% |
-| 18 | [Erreurs HTTP](cours/erreur-http), [GUI](cours/erreur-gui) et [attente serveur](cours/attente-serveur) ✍️ | 📝 [T5 : erreurs, codes HTTP](cours/tests-papier) · **TP2 remise (15%)** |
-| 19 | [Déploiement réel I](cours/deploiement-reel) ✍️🤖 | TP3 à 10% |
-| 20 | [Déploiement réel II](cours/deploiement-reel) ✍️ | 📝 [T6 : déploiement, où tourne quoi](cours/tests-papier) |
-| 21 | [Cybersec : injections](cours/injection) ✍️ | TP3 à 30% |
-| 22 | [Cybersec : crypto](cours/injection) ✍️ | |
-| 23 | [Cybersec : contrôle d'accès](cours/controle-acces) ✍️ | 📝 [T7 : trouver la faille](cours/tests-papier) |
-| 24 | [Cybersec élargie](cours/cybersec-elargie) 🤖✍️ | TP3 à 60% |
-| 25 | [CTF](cours/ctf) ✍️ | |
-| 26 | [Durcir sa prod](cours/durcir-prod) 🤖 | 📝 [T8 : synthèse sécurité](cours/tests-papier) |
-| 27 | [Compatibilité API](cours/compatibilite-api), [DTO / cookies](cours/causerie-dto-cookie) ✍️ | **TP3 remise (15%)** |
-| 28 | [Correction TP3](cours/correction-tp3), [stratégie d'examen](cours/truc-examen) | |
-| 29 | [💻 Formatif final](cours/formatif-final) | formatif |
-| 30 | [💻 Examen final](cours/examen) | **Final (25%)** |
-
-**Pondération** : 8 tests papier × 2,5% = 20% · TP1 10% · TP2 15% · TP3 15% · Intra 15% · Final 25%.
-
-</Column>
-
-</Row>
