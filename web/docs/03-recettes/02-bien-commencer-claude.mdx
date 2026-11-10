@@ -1,0 +1,70 @@
+---
+title: Bien commencer avec Claude
+description: Les 3 réflexes pour coder avec Claude Code, et un exemple de CLAUDE.md
+hide_table_of_contents: true
+---
+
+# Bien commencer avec Claude
+
+## 1. Planifier avant de coder
+
+Passe en **mode plan** (`Shift+Tab` jusqu'à « plan mode »). Donne la demande **avec ses critères** : quel écran, quel comportement, quels fichiers ne pas toucher.
+
+**Lis le plan** et corrige-le avant d'accepter. Un `ViewModel` inventé ou une mauvaise route se corrige en 30 secondes dans le plan, en 30 minutes dans le code.
+
+## 2. Lui donner un moyen de vérifier
+
+Termine ta demande par :
+
+```text
+Lance ./gradlew test (ou assembleDebug) et corrige jusqu'à ce que ça passe.
+```
+
+Pour un bogue, colle le **message d'erreur exact** ou les logs (Logcat, console Spring), pas « ça marche pas ». Sans retour, Claude devine; avec un test ou un log, il converge.
+
+## 3. Petites tâches, un commit par tâche, tu relis le diff
+
+- Une demande = une fonctionnalité. **Commit** dès que ça marche : git est ton bouton annuler.
+- Avant de commiter, **lis le diff**. Pour chaque ligne, tu dois pouvoir dire pourquoi elle est là : c'est ce qu'on te demandera à la défense.
+- Si Claude part dans le décor, `git restore .` puis `/clear` valent mieux que dix messages pour le corriger.
+
+## Le `CLAUDE.md`
+
+Un fichier court à la **racine du repo**. Claude le relit à chaque session : c'est là que vont les conventions et les commandes, pour ne pas les répéter à chaque demande. Court veut dire **moins de 40 lignes** : ce qui n'aide pas Claude à chaque tâche n'a rien à y faire.
+
+`/init` en génère un premier jet à partir du code : relis-le et coupe.
+
+Exemple pour le projet fil rouge :
+
+```markdown title="CLAUDE.md"
+# Mes notes (4M6, hiver 2027)
+
+Serveur Spring Boot dans `serveur/`, deux apps Android Compose dans `android/`
+(modules `:commun`, `:enseignant`, `:etudiant`).
+
+## Commandes
+- Serveur, tests : `cd serveur && ./gradlew test`
+- Apps, compilation : `cd android && ./gradlew assembleDebug`
+- Apps, tests unitaires : `cd android && ./gradlew testDebugUnitTest`
+- Lance les tests touchés avant de dire que c'est fini.
+
+## Contrat
+- `API.md` est la référence : routes, DTO et codes d'erreur. Ne le modifie jamais;
+  si une demande le contredit, arrête et demande-moi.
+- `serveur/ACCES.md` : qui a le droit d'appeler chaque route. Chaque nouvelle
+  route a un test pour le cas refusé (401, 403 ou 404).
+
+## Conventions
+- Code en français : noms de classes, fonctions, variables, commits.
+- Textes affichés dans `strings.xml` (fr et en), jamais en dur.
+- Thème, DTO et composants partagés dans `:commun`, pas copiés dans une app.
+- Pas de nouvelle dépendance sans me le demander.
+
+## Ne touche pas
+- `serveur/RELECTURE.md`, `serveur/ACCES.md`, `docs/IA.md` : écrits à la main.
+- Aucun secret dans le code ni dans `application.properties` commité.
+```
+
+Quand Claude refait la même erreur deux fois, ajoute une ligne au `CLAUDE.md` : c'est le bon réflexe.
+
+Référence : [Bonnes pratiques Claude Code](https://code.claude.com/docs/en/best-practices)
