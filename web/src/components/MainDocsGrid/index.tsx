@@ -90,7 +90,8 @@ export default function MainDocsGrid() {
         ? doc._documentTitle.trim()
         : undefined;
 
-    return frontmatterTitle || sidebarTitle || markdownTitle || doc?.id || "";
+    // Une même page peut servir à plusieurs séances : le libellé de la sidebar (numéroté) prime
+    return sidebarTitle || frontmatterTitle || markdownTitle || doc?.id || "";
   };
 
   return (
@@ -141,8 +142,11 @@ export default function MainDocsGrid() {
           >
             <div>
               <h3>{resolveDocTitle(doc)}</h3>
-              <p>{doc?.description || ""}</p>
+              <p>{doc?._sidebarProps?.description || doc?.description || ""}</p>
             </div>
+            {typeof doc?._sidebarProps?.evaluation === "string" && (
+              <p className={styles.evaluation}>{doc._sidebarProps.evaluation}</p>
+            )}
             <div>
               {typeof doc?._sidebarProps?.avancement === "number" && (
 

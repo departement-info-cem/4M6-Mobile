@@ -30,6 +30,17 @@
   font-size: 1.05rem;
 }
 
+.gridItem p.evaluation {
+  margin: 0.4rem 0 0.2rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--ifm-color-primary-darker);
+}
+
+.gridContainerDark .gridItem p.evaluation {
+  color: var(--ifm-color-primary-lighter);
+}
+
 .note {
   text-align: center;
 }

@@ -4,8 +4,6 @@ slug: /
 hide_table_of_contents: true
 ---
 
-import PlanSeances from './_plan-seances.mdx';
-
 # Accueil
 
 Bienvenue au cours de 4M6 - Applications mobiles, version **hiver 2027**!
@@ -76,14 +74,8 @@ Le projet fil rouge (TP1, TP2, TP3) se fait avec Claude, mais chaque remise comp
 <DocsViewer
     tabs={[
     {
-        id: "seances",
-        label: "Séances et évaluations",
-        icon: "📝",
-        component: <PlanSeances />,
-    },
-    {
         id: "grid",
-        label: "Cartes",
+        label: "Cours",
         icon: "📋",
         component: <MainDocsGrid />,
     },
@@ -118,5 +110,9 @@ Le projet fil rouge (TP1, TP2, TP3) se fait avec Claude, mais chaque remise comp
         />,
     }
     ]}
-    defaultTabId="seances"
+    defaultTabId="grid"
 />
+
+Légende : <Etiquette type="claude" /> <Etiquette type="main" /> 📝 test papier 10 min · 💻 examen sans IA
+
+**Pondération** : 8 [tests papier](cours/tests-papier) × 2,5% = 20% · TP1 10% · TP2 15% · TP3 15% · Intra 15% · Final 25%.

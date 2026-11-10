@@ -77,6 +77,7 @@ const sidebars = {
       label: "1 - Plan de cours + le choc 🤖",
       id: "cours/choc-claude",
       customProps: {
+        evaluation: "Repo d'exercices créé",
         calendrier: {
           Joris: [{ 1010: joris[1] }],
           Benoît: [{ 1020: benoit[1] }],
@@ -88,6 +89,8 @@ const sidebars = {
       label: "2 - Bilan du choc, IA web ou IA avec le code",
       id: "cours/revision",
       customProps: {
+        description: "Bilan du choc, IA web contre Claude Code dans le projet, révision Compose",
+        evaluation: "Établissement choisi (fil rouge)",
         calendrier: {
           Joris: [{ 1010: joris[2] }],
           Benoît: [{ 1020: benoit[2] }],
@@ -99,6 +102,8 @@ const sidebars = {
       label: "3 - Mise en page 📝",
       id: "cours/mise-en-page",
       customProps: {
+        description: "Column, Row, Modifier et proportions : la mise en page en Compose",
+        evaluation: "📝 Test T1 : valeurs, expressions, types",
         calendrier: {
           Joris: [{ 1010: joris[3] }],
           Benoît: [{ 1020: benoit[3] }],
@@ -110,6 +115,7 @@ const sidebars = {
       label: "4 - Listes, navigation, Scaffold",
       id: "cours/listes",
       customProps: {
+        description: "LazyColumn, navigation entre écrans, Scaffold",
         avancementLabel: "TP1",
         avancement: 0.2,
         calendrier: {
@@ -136,6 +142,8 @@ const sidebars = {
       label: "6 - 6 langues 📝",
       id: "cours/multilingue",
       customProps: {
+        description: "Ressources, images, et l'app en 6 langues",
+        evaluation: "📝 Test T2 : portée, lambdas, état",
         calendrier: {
           Joris: [{ 1010: joris[6] }],
           Benoît: [{ 1020: benoit[6] }],
@@ -148,6 +156,8 @@ const sidebars = {
       id: "cours/http",
       className: "remise-tp1",
       customProps: {
+        description: "Retrofit : premier appel GET, service et DTO",
+        evaluation: "Remise TP1 (10%)",
         avancementLabel: "TP1 - Remis",
         avancement: 1,
         calendrier: {
@@ -161,6 +171,7 @@ const sidebars = {
       label: "8 - Réseau : POST, DTO",
       id: "cours/http",
       customProps: {
+        description: "Envoyer des données en POST, DTO côté client",
         calendrier: {
           Joris: [{ 1010: joris[8] }],
           Benoît: [{ 1020: benoit[8] }],
@@ -172,6 +183,8 @@ const sidebars = {
       label: "9 - Réseau réel 📝",
       id: "cours/http",
       customProps: {
+        description: "Appels sur une vraie API, listes",
+        evaluation: "📝 Test T3 : trace client-serveur, DTO",
         calendrier: {
           Joris: [{ 1010: joris[9] }],
           Benoît: [{ 1020: benoit[9] }],
@@ -207,6 +220,7 @@ const sidebars = {
       label: "12 - Spring par Claude 📝",
       id: "cours/spring-par-claude",
       customProps: {
+        evaluation: "📝 Test T4 : cycle de vie, trace serveur",
         calendrier: {
           Joris: [{ 1010: joris[12] }],
           Benoît: [{ 1020: benoit[12] }],
@@ -218,6 +232,8 @@ const sidebars = {
       label: "13 - Formatif intra 💻",
       id: "cours/formatif-intra",
       customProps: {
+        description: "Examens intra des sessions passées, à faire sans IA",
+        evaluation: "💻 Formatif, sans IA",
         calendrier: {
           Joris: [{ 1010: joris[13] }],
           Benoît: [{ 1020: benoit[13] }],
@@ -230,6 +246,8 @@ const sidebars = {
       id: "cours/examen",
       className: "examen",
       customProps: {
+        description: "Papier + machine, sans IA",
+        evaluation: "💻 Examen intra (15%)",
         calendrier: {
           Joris: [{ 1010: joris[14] }],
           Benoît: [{ 1020: benoit[14] }],
@@ -281,6 +299,8 @@ const sidebars = {
       id: "cours/erreur-http",
       className: "remise-tp2",
       customProps: {
+        description: "Codes HTTP, exceptions, messages à l'utilisateur, attente du serveur",
+        evaluation: "📝 Test T5 : erreurs, codes HTTP · Remise TP2 (15%)",
         avancementLabel: "TP2 - Remis",
         avancement: 1,
         calendrier: {
@@ -307,6 +327,8 @@ const sidebars = {
       label: "20 - Déploiement réel II 📝",
       id: "cours/deploiement-reel",
       customProps: {
+        description: "Finir la mise en production du fil rouge",
+        evaluation: "📝 Test T6 : déploiement, où tourne quoi",
         calendrier: {
           Joris: [{ 1010: joris[20] }],
           Benoît: [{ 1020: benoit[20] }],
@@ -318,6 +340,7 @@ const sidebars = {
       label: "21 - Cybersec : injections",
       id: "cours/injection",
       customProps: {
+        description: "Injection SQL et injection JavaScript",
         avancementLabel: "TP3",
         avancement: 0.3,
         calendrier: {
@@ -331,6 +354,7 @@ const sidebars = {
       label: "22 - Cybersec : crypto",
       id: "cours/injection",
       customProps: {
+        description: "Chiffrement et hachage",
         calendrier: {
           Joris: [{ 1010: joris[22] }],
           Benoît: [{ 1020: benoit[22] }],
@@ -342,6 +366,7 @@ const sidebars = {
       label: "23 - Cybersec : contrôle d'accès 📝",
       id: "cours/controle-acces",
       customProps: {
+        evaluation: "📝 Test T7 : trouver la faille",
         calendrier: {
           Joris: [{ 1010: joris[23] }],
           Benoît: [{ 1020: benoit[23] }],
@@ -377,6 +402,7 @@ const sidebars = {
       label: "26 - Durcir sa prod 📝",
       id: "cours/durcir-prod",
       customProps: {
+        evaluation: "📝 Test T8 : synthèse sécurité",
         calendrier: {
           Joris: [{ 1010: joris[26] }],
           Benoît: [{ 1020: benoit[26] }],
@@ -389,6 +415,8 @@ const sidebars = {
       id: "cours/compatibilite-api",
       className: "remise-tp3",
       customProps: {
+        description: "Versions d'API Android et émulateurs; causerie DTO et cookies",
+        evaluation: "Remise TP3 (15%)",
         avancementLabel: "TP3 - Remis",
         avancement: 1,
         calendrier: {
@@ -402,6 +430,7 @@ const sidebars = {
       label: "28 - Correction TP3, stratégie",
       id: "cours/correction-tp3",
       customProps: {
+        description: "Correction du TP3 et stratégie pour l'examen final",
         calendrier: {
           Joris: [{ 1010: joris[28] }],
           Benoît: [{ 1020: benoit[28] }],
@@ -413,6 +442,8 @@ const sidebars = {
       label: "29 - Formatif final 💻",
       id: "cours/formatif-final",
       customProps: {
+        description: "Examens finaux des sessions passées, à faire sans IA",
+        evaluation: "💻 Formatif, sans IA",
         calendrier: {
           Joris: [{ 1010: joris[29] }],
           Benoît: [{ 1020: benoit[29] }],
@@ -425,6 +456,8 @@ const sidebars = {
       id: "cours/examen",
       className: "examen",
       customProps: {
+        description: "Papier + machine, sans IA",
+        evaluation: "💻 Examen final (25%)",
         calendrier: {
           Joris: [{ 1010: joris[30] }],
           Benoît: [{ 1020: benoit[30] }],
