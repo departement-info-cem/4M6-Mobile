@@ -112,6 +112,8 @@ Note dans `docs/IA.md` : ce que Claude a fait seul, ce que tu as dû corriger.
 - **Remote Control** : tu lances `claude` chez toi et tu le pilotes depuis le téléphone ou le web. L'ordi doit **rester allumé** et `claude` ouvert. Avantage : ton SDK et ton émulateur.
 - **SSH + tmux** : même idée, sur une machine que tu contrôles.
 
+Dans les deux cas, Claude tourne **sur ton ordi, avec tes droits**, sans que tu regardes. Donne-lui un compte ou un conteneur à part : [Une machine pour Claude](../03-recettes/03-machine-pour-claude.mdx). La session cloud n'a pas ce problème : sa VM est jetable et ne voit que ton repo.
+
 Pour aller plus loin : l'action GitHub de Claude répond à `@claude` dans une issue ou une PR (jeton créé avec `claude setup-token`, dans **ton** repo seulement).
 
 :::

@@ -1,0 +1,55 @@
+---
+title: Une machine pour Claude
+description: Laisser Claude travailler seul sans risquer ta machine, tes comptes ni la production
+hide_table_of_contents: true
+---
+
+# Une machine pour Claude
+
+Claude Code exécute de vraies commandes sur ta machine. Ce qu'il peut faire dépend du **mode de permission** :
+
+| Mode | Qui approuve | Pour |
+|---|---|---|
+| `manual` | toi, à chaque commande ou modification | apprendre, code sensible |
+| `auto` | un second modèle qui juge chaque action à ta place | le travail courant : **c'est le mode par défaut** |
+| `bypassPermissions` (`--dangerously-skip-permissions`, le mode « yolo ») | personne | **seulement** dans un conteneur ou une VM isolée |
+
+`Shift+Tab` change de mode pendant la session.
+
+## Le risque
+
+En `auto`, et encore plus en `bypassPermissions`, Claude enchaîne les commandes sans toi. Une erreur (une hallucination, un `rm` dans le mauvais dossier) ou une instruction malveillante cachée dans une page web, une issue ou une dépendance qu'il lit, et il agit avec **tes** droits :
+
+- tes fichiers personnels : photos, documents, autres projets;
+- tes secrets : clés SSH, jetons GitHub, `.env`, mots de passe enregistrés dans le navigateur;
+- tes comptes : tout ce à quoi ton terminal est déjà connecté.
+
+La question à se poser : **si Claude voulait nuire, qu'est-ce qu'il pourrait atteindre d'ici?** Tout ce qu'il peut atteindre et dont il n'a pas besoin est un risque inutile.
+
+## Donne-lui « sa » machine
+
+Une machine qui ne contient **que** ce dont la tâche a besoin : le repo, les outils de compilation, un accès GitHub limité.
+
+- **Au collège** : c'est déjà le cas. Le poste s'efface à la déconnexion et ne contient rien de personnel.
+- **À la maison**, du plus simple au plus solide :
+  1. une [session cloud](../cours/claude-cloud) : la VM d'Anthropic, jetable, qui ne voit que ton repo;
+  2. un **compte utilisateur séparé** sur ton ordi, sans tes fichiers ni tes connexions;
+  3. un **conteneur** (dev container) ou une **VM**.
+- Sur macOS, Linux et WSL2, `/sandbox` active en plus le bac à sable de Claude Code : ses commandes ne peuvent écrire que dans le dossier du projet et n'atteignent que les sites autorisés.
+
+Et seulement les accès nécessaires : un jeton GitHub **limité au repo du projet** (jeton *fine-grained*), jamais ton compte complet.
+
+## La BD : jetable
+
+- En développement, Claude travaille sur une BD **jetable** : H2 en mémoire (le profil par défaut du fil rouge), ou un PostgreSQL dans un conteneur qu'on recrée en une commande.
+- Une BD jetable se casse sans conséquence : on la recrée, les données de test viennent d'un script.
+
+## La prod : hors d'atteinte
+
+- Les identifiants de la BD de production et de l'hébergeur ne sont **jamais** sur la machine de Claude : ni dans le repo, ni dans un `.env`, ni dans une variable d'environnement de sa session.
+- Le seul chemin vers la prod : Claude pousse une **branche** → tu relis la **PR** → tu fusionnes → le **pipeline** déploie avec ses propres secrets.
+- Pour un problème en prod, tu lui donnes les **logs**, pas les clés.
+
+Ainsi, une hallucination (ou un Claude devenu malveillant) peut casser une branche ou une BD jetable, mais pas la production.
+
+Références : [modes de permission](https://code.claude.com/docs/en/permission-modes) · [bac à sable](https://code.claude.com/docs/en/sandboxing) · [sécurité](https://code.claude.com/docs/en/security)

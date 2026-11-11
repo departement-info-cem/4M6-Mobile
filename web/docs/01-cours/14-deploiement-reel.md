@@ -76,6 +76,10 @@ Demande à Claude :
 
 Puis vérifie **à la main** : casse volontairement un test, pousse, et confirme que **rien n'est déployé**.
 
+:::danger Claude n'a jamais les clés de la prod
+Les secrets de la BD de production et de l'hébergeur vont dans les secrets GitHub et chez l'hébergeur, **pas** sur la machine où tourne Claude. Il écrit le pipeline; c'est le pipeline, après ta relecture de la PR, qui déploie. En développement, Claude travaille sur H2 ou une BD jetable. Ainsi une hallucination ne peut pas effacer la prod. Voir [Une machine pour Claude](../03-recettes/03-machine-pour-claude.mdx).
+:::
+
 ## Exercice 4 : la prod <Etiquette type="main" />
 
 1. Configure les variables d'environnement chez l'hébergeur (jamais dans le repo).

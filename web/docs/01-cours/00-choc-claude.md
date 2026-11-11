@@ -75,6 +75,10 @@ claude
    - ce que tu lui as demandé de changer.
 4. Accepte le plan, laisse Claude coder, compiler, et **commit + push** (il utilise `gh`/`git` pour toi).
 
+:::caution À la maison
+Par défaut, Claude enchaîne les commandes sans te demander (mode `auto`), avec **tes** droits. Au collège, le poste est vide et s'efface : aucun risque. Chez toi, ne le lance pas sur un compte qui contient tes photos, tes mots de passe et tous tes comptes : voir [Une machine pour Claude](../03-recettes/03-machine-pour-claude.mdx).
+:::
+
 :::caution
 Tu ne gagnes rien à copier un TP de 3M5 existant dans le dossier : l'exercice consiste à **observer** ce que Claude fait seul, à partir de l'énoncé.
 :::
