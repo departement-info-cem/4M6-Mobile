@@ -74,20 +74,35 @@ claude
    - ce qui te semble faux ou risqué;
    - ce que tu lui as demandé de changer.
 4. Accepte le plan, laisse Claude coder, compiler, et **commit + push** (il utilise `gh`/`git` pour toi).
-5. Lance les apps sur l'émulateur. Est-ce que ça marche vraiment? Note dans `IA.md` ce qui ne marche pas.
 
 :::caution
 Tu ne gagnes rien à copier un TP de 3M5 existant dans le dossier : l'exercice consiste à **observer** ce que Claude fait seul, à partir de l'énoncé.
 :::
 
-## Exercice 3 : Claude corrige <Etiquette type="claude" />
+## Exercice 3 : valider l'app à la main <Etiquette type="main" />
+
+Claude dit que c'est fini. C'est **toi** qui décides si c'est vrai : tu es le validateur, pas le spectateur. Ce sera ton rôle toute la session.
+
+Dans `ex03-correction/validation.md`, pour **un** des deux TPs :
+
+1. Relis l'énoncé et fais la liste de **chaque exigence**, une par ligne.
+2. Lance l'app sur l'émulateur et teste chaque exigence. Note comment tu l'as testée et le résultat :
+
+   | Exigence | Comment je l'ai testée | Résultat |
+   |---|---|---|
+   | Le bouton Ajouter ajoute à la liste | ajout de 3 éléments, dont un vide | ⚠️ l'élément vide est accepté |
+
+3. Essaie aussi ce que l'énoncé ne dit pas : champ vide, texte très long, rotation de l'écran, bouton retour, langue anglaise.
+4. Pour **un** problème trouvé, ouvre le code et trouve la ligne responsable. Explique-la en une phrase.
+
+## Exercice 4 : Claude corrige <Etiquette type="claude" />
 
 Dans une **nouvelle** session Claude (pour qu'il ne se souvienne pas d'avoir écrit le code), demande-lui de corriger `ex02-tp-3M5/` comme le ferait un professeur :
 
 - une note sur 100 par TP, avec la grille de l'énoncé;
 - surtout des **retours** : bogues, code mort, mauvaise gestion d'état, ce qui manque à l'énoncé.
 
-Sauvegarde la correction dans `ex03-correction/correction.md`, puis ajoute **à la main** ta propre réaction : es-tu d'accord? Qu'a-t-il raté?
+Sauvegarde la correction dans `ex03-correction/correction.md`, puis ajoute **à la main** une comparaison avec ta validation : qu'a-t-il trouvé que tu n'avais pas vu? Qu'as-tu trouvé, en lançant l'app, qu'il n'a pas vu en lisant le code?
 
 ## Pour la suite
 
