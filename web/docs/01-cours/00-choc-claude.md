@@ -58,7 +58,7 @@ Choisis `GitHub.com`, `HTTPS`, puis l'authentification par navigateur. Vérifie 
 gh auth status
 ```
 
-4. Crée les dossiers `ex02-tp-3M5/` et `ex03-correction/`, commit et push à la main.
+4. Crée les dossiers `ex02-tp-3M5/` et `ex03-validation/`, commit et push à la main.
 
 ## Exercice 2 : Claude refait les TP2 et TP3 de 3M5 <Etiquette type="claude" />
 
@@ -83,7 +83,7 @@ Tu ne gagnes rien à copier un TP de 3M5 existant dans le dossier : l'exercice c
 
 Claude dit que c'est fini. C'est **toi** qui décides si c'est vrai : tu es le validateur, pas le spectateur. Ce sera ton rôle toute la session.
 
-Dans `ex03-correction/validation.md`, pour **un** des deux TPs :
+Dans `ex03-validation/validation.md`, pour **un** des deux TPs :
 
 1. Relis l'énoncé et fais la liste de **chaque exigence**, une par ligne.
 2. Lance l'app sur l'émulateur et teste chaque exigence. Note comment tu l'as testée et le résultat :
@@ -94,15 +94,6 @@ Dans `ex03-correction/validation.md`, pour **un** des deux TPs :
 
 3. Essaie aussi ce que l'énoncé ne dit pas : champ vide, texte très long, rotation de l'écran, bouton retour, langue anglaise.
 4. Pour **un** problème trouvé, ouvre le code et trouve la ligne responsable. Explique-la en une phrase.
-
-## Exercice 4 : Claude corrige <Etiquette type="claude" />
-
-Dans une **nouvelle** session Claude (pour qu'il ne se souvienne pas d'avoir écrit le code), demande-lui de corriger `ex02-tp-3M5/` comme le ferait un professeur :
-
-- une note sur 100 par TP, avec la grille de l'énoncé;
-- surtout des **retours** : bogues, code mort, mauvaise gestion d'état, ce qui manque à l'énoncé.
-
-Sauvegarde la correction dans `ex03-correction/correction.md`, puis ajoute **à la main** une comparaison avec ta validation : qu'a-t-il trouvé que tu n'avais pas vu? Qu'as-tu trouvé, en lançant l'app, qu'il n'a pas vu en lisant le code?
 
 ## Pour la suite
 
