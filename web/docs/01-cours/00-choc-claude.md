@@ -27,7 +27,8 @@ hide_table_of_contents: true
 
 1. Présentation du plan de cours : projet fil rouge, tests papier, intra et final **sans IA**.
 2. Le choc : en une séance, Claude Code refait les deux TPs Android qui t'ont pris des semaines en 3M5.
-3. Discussion : qu'est-ce que ça change pour toi? Qu'est-ce qu'il faut encore savoir faire **soi-même**?
+
+On en tirera les leçons à la [séance 2](revision). Aujourd'hui, on observe.
 
 :::
 
@@ -99,9 +100,4 @@ Dans `ex03-validation/validation.md`, pour **un** des deux TPs :
 3. Essaie aussi ce que l'énoncé ne dit pas : champ vide, texte très long, rotation de l'écran, bouton retour, langue anglaise.
 4. Pour **un** problème trouvé, ouvre le code et trouve la ligne responsable. Explique-la en une phrase.
 
-## Pour la suite
-
-Le reste de la session, tu feras deux choses en alternance :
-
-- <Etiquette type="claude" /> piloter Claude sur ton projet fil rouge et des portions de serveur;
-- <Etiquette type="main" /> apprendre à **lire, tracer et écrire** ce code toi-même. C'est ce qui est évalué aux tests papier et aux examens, sans IA.
+Garde tes notes : on commence la [séance 2](revision) par un retour sur ce que tu as vu.

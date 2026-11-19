@@ -30,6 +30,12 @@ On parlera de la possibilité d'ajouter un logo ou des images pour distinguer so
 
 :::
 
+:::info Travail TP1
+
+Le reste de la séance est du temps de travail sur le [TP1](../tp/tp1), remis à la prochaine séance. Tu peux demander une **défense à blanc** au professeur : 5 minutes pour raconter un appel réseau de ton app comme à la vraie défense, et savoir ce qui manque.
+
+:::
+
 </Column>
 
 </Row>
@@ -66,7 +72,7 @@ Toi seul peux valider le français et l'anglais :
 2. Vérifie qu'aucune chaîne n'est restée en dur dans le code :
 
 ```bash
-grep -rn 'Text("' app/src/main/java
+grep -rn 'Text("' enseignant/src/main/java etudiant/src/main/java commun/src/main/java
 ```
 
 3. Passe l'émulateur dans chaque langue. En langue de droite à gauche, l'interface s'inverse-t-elle correctement?

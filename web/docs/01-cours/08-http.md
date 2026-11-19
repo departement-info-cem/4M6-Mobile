@@ -190,6 +190,6 @@ Créez un fichier **dto2.md** dans votre repo pour garder votre réponse avec le
 
 ## Exercice couche réseau du fil rouge <Etiquette type="claude" />
 
-Quand RetrofitGithub fonctionne **à la main**, demande à Claude la couche réseau du projet fil rouge (interface Retrofit, DTO, singleton) dans le module `:commun`, en respectant le contrat `API.md`.
+Quand RetrofitGithub fonctionne **à la main**, demande à Claude la couche réseau du projet fil rouge (interface Retrofit, DTO, singleton) dans le module `:commun`, en respectant l'API de Léo2000 (énoncé du TP1).
 
 Vérifie ensuite à la main : pour chaque DTO, compare **champ par champ** avec le JSON réel reçu (Bruno). Les pièges fréquents : `Long` devenu `Int`, champ nullable déclaré non-nullable, nom de champ différent.

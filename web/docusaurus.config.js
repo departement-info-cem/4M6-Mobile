@@ -95,6 +95,12 @@ const config = {
             label: "Recettes",
           },
           {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "capsules",
+            label: "Capsules",
+          },
+          {
             type: "doc",
             docId: "mantras",
             position: "right",

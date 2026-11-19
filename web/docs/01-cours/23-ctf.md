@@ -45,7 +45,7 @@ Vous aurez trois heures pour montrer avec succès que vous avez réussi à explo
 
 ### Exercice CTF entre équipes <Etiquette type="main" />
 
-Chaque équipe attaque le serveur de notes **déployé** d'une autre équipe (assignée par le professeur). Comme tout le monde respecte le même `API.md`, tes requêtes Bruno fonctionnent sur tous les serveurs.
+Chaque équipe attaque le Léo2000 **déployé** d'une autre équipe (assignée par le professeur), ainsi que l'Omnivax déployé par le professeur. Comme tous les Léo2000 partent du même code et de la même API, tes requêtes Bruno fonctionnent sur tous les serveurs.
 
 Le professeur te donne un compte **étudiant** et un compte **enseignant** sur le serveur ciblé. Objectifs, du plus simple au plus grave :
 

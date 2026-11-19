@@ -86,4 +86,4 @@ Les secrets de la BD de production et de l'hébergeur vont dans les secrets GitH
 2. Change l'URL de base Retrofit de ton app Android vers la production. Le `10.0.2.2` ne marche plus : pourquoi?
 3. Crée un utilisateur depuis l'app, puis retrouve-le **dans la BD** de production.
 4. Provoque une erreur 500 et retrouve sa trace dans les logs de l'hébergeur.
-5. Dans `deploiement/SCHEMA.md`, dessine qui parle à qui : les deux apps, ton serveur, ta BD, le Dossier scolaire, GitHub, le pipeline. Pour chaque flèche : protocole et secret utilisé.
+5. Dans `deploiement/SCHEMA.md`, dessine qui parle à qui : les deux apps, ton serveur, ta BD, Omnivax, GitHub, le pipeline. Pour chaque flèche : protocole et secret utilisé.

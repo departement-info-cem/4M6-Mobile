@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 - Ton repo du fil rouge est sur GitHub et `main` est poussé.
 - Installe l'app **Claude** sur ton téléphone et connecte-toi avec ton compte Claude Pro.
-- Relis la page [worktrees](worktrees) : une tâche = une branche. C'est la même idée aujourd'hui, mais la branche se fait **ailleurs que sur ta machine**.
+- Une tâche = une branche : aujourd'hui, la branche se fait **ailleurs que sur ta machine**.
 
 :::
 
@@ -57,7 +57,7 @@ Questions :
 
 ## Exercice 2 : le serveur dans le cloud <Etiquette type="claude" />
 
-Depuis claude.ai/code, choisis ton repo et demande une **route de `API.md` que ton serveur n'a pas encore**, avec ses tests JUnit. Demande explicitement à Claude de lancer les tests avant de terminer.
+Depuis claude.ai/code, choisis ton repo et demande une **route de l'API du TP2 que ton Léo2000 n'a pas encore**, avec ses tests JUnit. Demande explicitement à Claude de lancer les tests avant de terminer.
 
 Java 21 et Gradle sont déjà installés dans la machine du cloud, et le réseau par défaut permet Maven Central et Spring : ton serveur compile tel quel.
 
@@ -93,7 +93,7 @@ Questions :
 2. Depuis le terminal, envoie une tâche au cloud :
 
    ```bash
-   claude --cloud "Ajoute l'écran de demande de révision dans l'app étudiant, selon API.md et CONVENTIONS.md, avec tests unitaires"
+   claude --cloud "Ajoute l'écran de demande de révision dans l'app étudiant, selon docs/API-TP2.md et CONVENTIONS.md, avec tests unitaires"
    ```
 
 3. Déconnecte-toi. Le soir, ouvre l'app mobile : la session continue-t-elle? Réponds à Claude s'il pose une question.

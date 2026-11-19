@@ -86,11 +86,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "2 - Bilan du choc, IA web ou IA avec le code",
+      label: "2 - Retour, rôles, l'interface avec Claude 🤖",
       id: "cours/revision",
       customProps: {
-        description: "Bilan du choc, IA web contre Claude Code dans le projet, révision Compose",
-        evaluation: "Établissement choisi (fil rouge)",
+        description: "Retour sur le choc, qui fait quoi (Claude, toi, le prof), Claude produit l'interface du TP1 après un plan",
+        evaluation: "Établissement choisi, PLAN-UI.md et CLAUDE.md",
+        avancementLabel: "TP1",
+        avancement: 0.25,
         calendrier: {
           Joris: [{ 1010: joris[2] }],
           Benoît: [{ 1020: benoit[2] }],
@@ -99,11 +101,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "3 - Mise en page 📝",
-      id: "cours/mise-en-page",
+      label: "3 - HTTP et Retrofit : premier GET 📝",
+      id: "cours/reseau-get",
       customProps: {
-        description: "Column, Row, Modifier et proportions : la mise en page en Compose",
+        description: "Requête, réponse, Retrofit GET sur Léo2000; capsules HTTP et lambda",
         evaluation: "📝 Test T1 : valeurs, expressions, types",
+        avancementLabel: "TP1",
+        avancement: 0.4,
         calendrier: {
           Joris: [{ 1010: joris[3] }],
           Benoît: [{ 1020: benoit[3] }],
@@ -112,12 +116,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "4 - Listes, navigation, Scaffold",
-      id: "cours/listes",
+      label: "4 - POST et DTO",
+      id: "cours/reseau-post-dto",
       customProps: {
-        description: "LazyColumn, navigation entre écrans, Scaffold",
+        description: "Envoyer des données à Léo2000, DTO côté client, onResponse contre onFailure",
         avancementLabel: "TP1",
-        avancement: 0.2,
+        avancement: 0.55,
         calendrier: {
           Joris: [{ 1010: joris[4] }],
           Benoît: [{ 1020: benoit[4] }],
@@ -126,11 +130,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "5 - Identité visuelle",
-      id: "cours/identite-visuelle",
+      label: "5 - Cookie et session",
+      id: "cours/reseau-cookie",
       customProps: {
+        description: "Connexion et déconnexion sur Léo2000, le cookie de session; capsule Origin et Referer",
         avancementLabel: "TP1",
-        avancement: 0.5,
+        avancement: 0.7,
         calendrier: {
           Joris: [{ 1010: joris[5] }],
           Benoît: [{ 1020: benoit[5] }],
@@ -139,11 +144,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "6 - 6 langues 📝",
+      label: "6 - 6 langues, travail TP1 📝",
       id: "cours/multilingue",
       customProps: {
-        description: "Ressources, images, et l'app en 6 langues",
+        description: "L'app en 6 langues, temps de travail sur le TP1, défense à blanc sur demande",
         evaluation: "📝 Test T2 : portée, lambdas, état",
+        avancementLabel: "TP1",
+        avancement: 0.9,
         calendrier: {
           Joris: [{ 1010: joris[6] }],
           Benoît: [{ 1020: benoit[6] }],
@@ -152,11 +159,11 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "7 - HTTP / Retrofit — remise TP1",
-      id: "cours/http",
+      label: "7 - Remise TP1, défenses",
+      id: "cours/remise-tp1",
       className: "remise-tp1",
       customProps: {
-        description: "Retrofit : premier appel GET, service et DTO",
+        description: "Défenses du TP1 à la main",
         evaluation: "Remise TP1 (10%)",
         avancementLabel: "TP1 - Remis",
         avancement: 1,
@@ -168,10 +175,12 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "8 - Réseau : POST, DTO",
-      id: "cours/http",
+      label: "8 - Lire Léo2000 : premiers pas Spring",
+      id: "cours/lire-leo2000",
       customProps: {
-        description: "Envoyer des données en POST, DTO côté client",
+        description: "Contrôleur, service, dépôt : suivre une requête dans le code de Léo2000",
+        avancementLabel: "TP2",
+        avancement: 0.05,
         calendrier: {
           Joris: [{ 1010: joris[8] }],
           Benoît: [{ 1020: benoit[8] }],
@@ -180,11 +189,13 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "9 - Réseau réel 📝",
-      id: "cours/http",
+      label: "9 - Ajouter une route à Léo2000 📝",
+      id: "cours/lire-leo2000",
       customProps: {
-        description: "Appels sur une vraie API, listes",
+        description: "Première route du TP2, de l'API à l'écran; temps TP2",
         evaluation: "📝 Test T3 : trace client-serveur, DTO",
+        avancementLabel: "TP2",
+        avancement: 0.1,
         calendrier: {
           Joris: [{ 1010: joris[9] }],
           Benoît: [{ 1020: benoit[9] }],
@@ -197,7 +208,7 @@ const sidebars = {
       id: "cours/spring-java",
       customProps: {
         avancementLabel: "TP2",
-        avancement: 0.1,
+        avancement: 0.2,
         calendrier: {
           Joris: [{ 1010: joris[10] }],
           Benoît: [{ 1020: benoit[10] }],
@@ -269,8 +280,8 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "16 - Worktrees, Claude en parallèle",
-      id: "cours/worktrees",
+      label: "16 - Le légacy Omnivax",
+      id: "cours/systeme-legacy",
       customProps: {
         avancementLabel: "TP2",
         avancement: 0.7,
@@ -472,6 +483,7 @@ const sidebars = {
   ],
   tp: [{ type: "autogenerated", dirName: "02-tp" }],
   recettes: [{ type: "autogenerated", dirName: "03-recettes" }],
+  capsules: [{ type: "autogenerated", dirName: "04-capsules" }],
 };
 
 module.exports = sidebars;

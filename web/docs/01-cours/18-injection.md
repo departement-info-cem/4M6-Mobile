@@ -89,6 +89,17 @@ Vous devez créer un fichier **EncodageMotDePasse.md** dans votre repo, où vous
 - Qu'est-ce que ça change dans l'application?
 - Comment en pratique on peut voir la différence, avec quel outil?
 
+### Exercice Omnivax <Etiquette type="main" />
+
+Omnivax (le légacy de la [séance 16](systeme-legacy)) est écrit en PHP avec des requêtes SQL et des pages HTML fabriquées à la main : le terrain idéal des injections. Avec ta copie locale (`docker compose up omnivax`), sans IA :
+
+1. Ouvre `releve.php` et cherche un matricule. Lis le code de la page : où le matricule reçu est-il utilisé?
+2. Trouve une valeur de matricule qui affiche **tous** les résultats de la table.
+3. Trouve une valeur qui fait exécuter du JavaScript par le navigateur.
+4. Pour chacune, rédige FAILLE, EXPLOIT et CORRECTIF dans `Omnivax.md`.
+
+Garde ces notes : Omnivax fait partie des cibles du [TP3](../tp/tp3).
+
 ### Omnisus (Optionnel) (Avancé)
 
 Ouvrez le projet [suivant](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/Omnisus) et prenez le temps de lire le README.

@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 - Avoir terminé [cycle de vie Spring](cycle-vie-spring).
 - Lire [cookies](cookies) : on s'en sert pour la session utilisateur.
-- Lire le contrat commun `API.md` fourni par le professeur (routes, DTO, codes d'erreur du serveur de notes).
+- Relire l'API du TP2 dans l'énoncé du [TP2](../tp/tp2) (routes, DTO, codes d'erreur à ajouter à Léo2000).
 
 :::
 
@@ -36,13 +36,13 @@ hide_table_of_contents: true
 
 ## Exercice 1 : les règles d'accès <Etiquette type="main" />
 
-Le contrat `API.md` dit **quoi**; à toi d'écrire **qui**. Dans `serveur/ACCES.md`, pour chaque route : qui a le droit (enseignant du groupe, étudiant concerné, collègue, personne) et le code renvoyé sinon (401, 403, 404). Pense au workflow de révision : demandée par l'étudiant concerné, proposée par l'enseignant du groupe, validée par un **autre** enseignant.
+L'API de l'énoncé dit **quoi**; à toi d'écrire **qui**. Dans `serveur/ACCES.md`, pour chaque route : qui a le droit (enseignant du groupe, étudiant concerné, collègue, personne) et le code renvoyé sinon (401, 403, 404). Pense au workflow de révision : demandée par l'étudiant concerné, proposée par l'enseignant du groupe, validée par un **autre** enseignant.
 
-Claude devra respecter `API.md` **et** `ACCES.md`.
+Claude devra respecter l'API de l'énoncé **et** `ACCES.md`.
 
 ## Exercice 2 : générer le serveur <Etiquette type="claude" />
 
-En mode plan, donne `API.md` et `ACCES.md` à Claude et demande :
+En mode plan, donne l'API du TP2 (copiée dans `docs/API-TP2.md`) et `ACCES.md` à Claude et demande :
 
 - un projet Spring Boot (Gradle, Java 21) avec H2;
 - entités, repositories, `@Service`, `@RestController`;

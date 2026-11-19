@@ -67,6 +67,15 @@ Essaie de reproduire les requêtes décrite en curl dans l'activité avec Bruno.
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la banche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
 
+### Exercice Léo2000 et Omnivax <Etiquette type="main" />
+
+La règle la plus importante du domaine des notes : **un enseignant ne touche qu'aux notes de ses propres cours**. Sans IA :
+
+1. Dans Léo2000, fais la liste des routes qui **modifient** une note. Pour chacune, trouve la ligne qui vérifie que l'enseignant est bien celui du groupe. Compare avec ton exercice 1 de la [séance 8](lire-leo2000).
+2. Connecté comme Ada, essaie avec Bruno de modifier une note dans le cours de Blaise. De quels identifiants as-tu besoin? Qui peut les connaître?
+3. Même question pour Omnivax : avec la clé d'un enseignant, peut-on corriger une note finale déclarée par un autre?
+4. Rédige FAILLE, EXPLOIT et CORRECTIF pour ce que tu as trouvé, puis le **test** qui empêche la faille de revenir.
+
 ### (Optionnel) Exercice Exploit2 <Etiquette type="main" />
 
 Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 02-SpringSecurityBasic de l'activité dans un fichier `02-exploit.md`.

@@ -1,10 +1,10 @@
 ---
-title: Système légacy
-description: Le serveur de notes déclare les notes finales à un vieux système (Spring Boot 2, BD minimale) - intégration serveur-serveur
+title: Le légacy Omnivax
+description: Séance 16 - Léo2000 déclare et consulte les notes finales dans Omnivax, un vieux système PHP + MySQL - intégration serveur-serveur
 hide_table_of_contents: true
 ---
 
-# Système légacy : déclarer les notes finales
+# Le légacy Omnivax : déclarer les notes finales
 
 <Row>
 
@@ -12,13 +12,14 @@ hide_table_of_contents: true
 
 :::tip Avant la séance
 
-- Ton serveur de notes calcule la moyenne pondérée d'un étudiant dans un groupe.
-- Télécharge le **Dossier scolaire** fourni par le professeur (un `.jar`) et lance-le :
+- Installe **Docker Desktop**.
+- Récupère le `docker-compose.yml` fourni par le professeur et démarre Omnivax (et sa BD MySQL) :
 
 ```bash
-java -jar dossier-scolaire.jar --server.port=9090
+docker compose up omnivax
 ```
 
+- Omnivax écoute sur `http://localhost:9090`. Ouvre `http://localhost:9090/releve.php` et cherche le matricule `2027001`.
 - Lis son `LISEZMOI.md` : c'est la seule documentation qui existe.
 
 :::
@@ -29,13 +30,15 @@ java -jar dossier-scolaire.jar --server.port=9090
 
 :::info Séance
 
-Dans la vraie vie, ton serveur n'est presque jamais seul. Le Dossier scolaire de l'établissement est **vieux** (Spring Boot 2, Java 11, une seule table) et **personne ne va le modifier pour toi** :
+Dans la vraie vie, ton serveur n'est presque jamais seul. Omnivax, le dossier scolaire de l'établissement, est **vieux** (PHP, MySQL, écrit en 2009 par Skytek) et **personne ne va le modifier pour toi** :
 
-- ton serveur devient **client HTTP** d'un autre serveur (`RestClient`);
-- un autre format de données : il faut **traduire** tes DTO vers les siens;
+- Léo2000 devient **client HTTP** d'un autre serveur (`RestClient`);
+- un autre format de données : il faut **traduire** tes DTO vers les siens (`snake_case`, notes entières, `annee` + lettre de `session`, dates `jj/mm/aaaa`);
 - un autre système qui peut être lent, en panne, ou répondre `200` avec une erreur dans le corps;
-- un secret de plus : la clé d'API du Dossier scolaire;
+- un secret de plus : la clé d'API d'Omnivax (en-tête `X-Cle-Api`);
 - déclarer deux fois la même note finale ne doit **pas** créer deux résultats.
+
+Docker : une **image** (Omnivax empaqueté avec PHP et Apache) et un **conteneur** (une image qui tourne). `docker compose` en démarre plusieurs qui se parlent par leur nom (`omnivax`, `omnivax-bd`).
 
 :::
 
@@ -45,30 +48,35 @@ Dans la vraie vie, ton serveur n'est presque jamais seul. Le Dossier scolaire de
 
 ## Exercice 1 : comprendre le vieux système <Etiquette type="main" />
 
-Sans IA, avec Bruno et le `LISEZMOI.md`, dans `serveur/LEGACY.md` :
+Sans IA, avec Bruno et le `LISEZMOI.md` (clé de développement : `cle-dev`), dans `serveur/LEGACY.md` :
 
-1. Déclare à la main une note finale. Quelle requête exacte (verbe, URL, en-têtes, corps)?
-2. Quelles différences avec ton `API.md` : noms des champs, format des notes, des dates, des identifiants?
-3. Envoie une déclaration invalide (note hors limites, matricule inconnu). Quel code HTTP reçois-tu? Où est l'erreur?
-4. Déclare deux fois la même note finale. Que se passe-t-il?
-5. Arrête le Dossier scolaire, et dis ce que **ton** serveur devra faire dans ce cas.
+1. Déclare à la main les notes finales de deux étudiants en une requête. Quelle requête exacte (verbe, URL, en-têtes, corps)?
+2. Consulte-les avec `consulter.php`. Quel format de date reçois-tu?
+3. Quelles différences avec l'API de Léo2000 : noms des champs, format des notes, de la session, des dates?
+4. Envoie une déclaration avec un matricule invalide. Quel code HTTP reçois-tu? Où est l'erreur?
+5. Déclare deux fois la même note finale. Que se passe-t-il?
+6. Arrête Omnivax (`docker compose stop omnivax`) et dis ce que **Léo2000** devra faire dans ce cas.
 
 ## Exercice 2 : le client du légacy <Etiquette type="claude" />
 
-Avec ton `LEGACY.md` comme spécification, demande à Claude :
+Avec ton `LEGACY.md` comme spécification et les deux routes `notes-finales` de l'API du [TP2](../tp/tp2), demande à Claude :
 
-- un `@Service` `ServiceDossierScolaire` qui utilise `RestClient` pour déclarer une note finale;
-- la traduction de tes DTO vers ceux du Dossier scolaire;
-- la clé d'API lue d'une variable d'environnement, jamais dans le code;
-- la route `POST /api/groupes/{id}/notes-finales` de `API.md` (enseignant du groupe seulement) qui déclare les notes de tous les étudiants du groupe;
-- des tests avec un faux Dossier scolaire (pas besoin du vrai pour tester).
+- un `@Service` `ServiceOmnivax` dans Léo2000 qui utilise `RestClient`;
+- la traduction des DTO de Léo2000 vers ceux d'Omnivax (`H27` devient `annee: 2027`, `session: "H"`);
+- l'URL et la clé lues de la configuration (`OMNIVAX_URL`, `OMNIVAX_CLE`), jamais dans le code;
+- `POST /api/groupes/{id}/notes-finales` (déclarer) et `GET /api/groupes/{id}/notes-finales` (consulter), enseignant du groupe seulement;
+- des tests avec un faux Omnivax (pas besoin du vrai pour tester).
 
 ## Exercice 3 : quand le vieux système flanche <Etiquette type="main" />
 
 Vérifie à la main, et corrige si nécessaire :
 
-1. Dossier scolaire arrêté : l'enseignant reçoit-il un message clair dans l'app, ou une erreur 500?
-2. Dossier scolaire lent (`java -jar dossier-scolaire.jar --dossier.lent=8000`) : ton serveur attend-il indéfiniment? Ajoute un délai d'expiration, et vérifie quelle exception arrive vraiment quand il est dépassé.
-3. Réponse `200` avec `"statut": "ERREUR"` : ton serveur la traite-t-il comme un succès?
-4. L'enseignant appuie deux fois sur « Déclarer » : combien de résultats dans le Dossier scolaire?
+1. Omnivax arrêté : l'enseignant reçoit-il un message clair dans l'app, ou une erreur 500?
+2. Omnivax lent (`OMNIVAX_LENT_MS=8000 docker compose up omnivax`) : Léo2000 attend-il indéfiniment? Ajoute un délai d'expiration, et vérifie quelle exception arrive vraiment quand il est dépassé.
+3. Réponse `200` avec `"statut": "ERREUR"` sur une ligne : Léo2000 la compte-t-il comme un succès?
+4. L'enseignant appuie deux fois sur « Déclarer » : combien de résultats dans Omnivax?
 5. Combien d'objets `RestClient` sont créés si 30 enseignants déclarent en même temps? (révise le [cycle de vie Spring](cycle-vie-spring))
+
+:::caution Omnivax n'est pas sûr
+Omnivax a été écrit avant que son équipe entende parler de sécurité. Tu y reviendras aux séances de cybersécurité et au TP3. D'ici là, ne mets dans ta copie locale que des données de test.
+:::
