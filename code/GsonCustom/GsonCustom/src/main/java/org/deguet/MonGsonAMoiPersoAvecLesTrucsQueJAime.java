@@ -11,7 +11,7 @@ public class MonGsonAMoiPersoAvecLesTrucsQueJAime {
 
     public static Gson getIt(){
         GsonBuilder builder = new GsonBuilder();
-        builder.enableComplexMapKeySerialization(); // permet de serialiser des Map avec des cles definies par vous
+        builder.enableComplexMapKeySerialization(); // permet de sérialiser des Map avec des clés définies par vous
         builder.registerTypeAdapter(DateTime.class, new CodecDateTime());
         builder.registerTypeAdapter(Date.class, new DateSerialiser());
         builder.registerTypeAdapter(byte[].class, new CodecByteArray());

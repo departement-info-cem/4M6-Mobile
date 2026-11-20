@@ -3,7 +3,7 @@
 ⚠️ **AVERTISSEMENT DE SÉCURITÉ** ⚠️
 
 Ce projet est strictement à des fins éducatives pour démontrer les vulnérabilités d'injection XSS et SQL. 
-**NE JAMAIS** utiliser ces techniques sur des systèmes que vous ne possédez pas ou sans autorisation explicite.
+**NE JAMAIS** utiliser ces techniques sur des systèmes que tu ne possèdes pas ou sans autorisation explicite.
 L'utilisation malveillante de ces connaissances est illégale et contraire à l'éthique.
 
 ---
@@ -36,7 +36,7 @@ En visitant http://localhost:8080/nouveau, on peut aussi essayer d'envoyer du co
 
 Puis recharge la page http://localhost:8080/home pour voir ce qui se passe.
 
-On pourrait aussi charge un script externe en injectant :
+On pourrait aussi charger un script externe en injectant :
 ```html
 <SCRIPT SRC=http://xss.rocks/xss.js></SCRIPT>
 ```
@@ -60,7 +60,7 @@ https://owasp.org/www-community/xss-filter-evasion-cheatsheet
 
 ## Injection SQL
 
-Essayons d'aller sur http://localhost:8080/nouveau et de taper directement dans le champ text:
+Essayons d'aller sur http://localhost:8080/nouveau et de taper directement dans le champ texte :
 
 ```
 DELETE FROM APPMESSAGE;
@@ -91,7 +91,7 @@ INSERT INTO APPMESSAGE VALUES (NULL ,''); DELETE FROM APPMESSAGE; --')
 
 Ce qui donne 2 commandes SQL :
 - la première est celle prévue par le développeur : `INSERT INTO APPMESSAGE VALUES (NULL ,'')`
-- la seconde est celle que l'attaquant a injecté : `DELETE FROM APPMESSAGE;` 
+- la seconde est celle que l'attaquant a injectée : `DELETE FROM APPMESSAGE;` 
 - `--` permet de commenter la fin de la requête pour éviter les erreurs de syntaxe
 
 Dans quel état est la BD maintenant?
@@ -108,7 +108,7 @@ Si tu es motivé ça peut aussi être le bon moment de faire la trace d'exécuti
 
 Essaie d'adapter l'injection SQL pour:
 - ne pas supprimer les messages
-- modifier tous les messages existant pour ton nom
+- modifier tous les messages existants pour ton nom
 
 ### Comparaison code vulnérable vs sécurisé
 
@@ -144,19 +144,19 @@ message = Jsoup.clean(message, Whitelist.simpleText());
 ```
 
 
-### Pour votre carrière
+### Pour ta carrière
 
-Sur chaque système que vous rencontrez:
-- Voir s'il y a des accès SQL direct
+Sur chaque système que tu rencontres:
+- Voir s'il y a des accès SQL directs
 - Voir si du code SQL est concaténé avec des données utilisateurs non contrôlées + + +
-- Si c'est le cas, proposez de migrer les cas vers des requêtes avec paramètres
+- Si c'est le cas, propose de migrer les cas vers des requêtes avec paramètres
 
 
 
 
 # Correctifs
 
-Dans le projet **solide** on corrigé les 2 failles.
+Dans le projet **solide** on a corrigé les 2 failles.
 
 ## Correctif injection SQL
 
@@ -171,7 +171,7 @@ SQL prévoit un mécanisme pour indiquer un paramètre dans une requête:
 
 De cette manière, il n'y a aucun moyen de confondre données utilisateur et code du développeur.
 
-Dans votre pratique, les frameworks de BD comme EntityFramework ou JPA font également ce genre de distinction. Il faut vraiment le faire exprès pour être exposé à une injection.
+Dans ta pratique, les frameworks de BD comme EntityFramework ou JPA font également ce genre de distinction. Il faut vraiment le faire exprès pour être exposé à une injection.
 
 ## Correctif injection JS
 
@@ -193,7 +193,7 @@ La leçon essentielle est de ne pas générer ton code HTML à la main.
 
 ## Exercices de validation
 
-Assures toi que les attaques réussies sur le projet fragile ne fonctionnent plus sur le projet solide.
+Assure-toi que les attaques réussies sur le projet fragile ne fonctionnent plus sur le projet solide.
 
 
 

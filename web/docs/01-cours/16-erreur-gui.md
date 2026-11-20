@@ -46,7 +46,7 @@ On discutera du cas où l'erreur vient de l'absence de signal ou de réseau dans
 
 ### Exercice Toast Snackbar <Etiquette type="main" />
 
-Copier un de vos exercices qui envoyait une requête à un web service.
+Copiez un de vos exercices qui envoyait une requête à un web service.
 
 Vous devez modifier votre application pour afficher soit le résultat si ça a fonctionné dans un **Snackbar** soit une erreur si le serveur est inaccessible (vous testerez avec l'appareil en mode avion) dans un **Toast**.
 
@@ -58,7 +58,7 @@ En ouvrant l'exemple [ici](https://github.com/departement-info-cem/4M6-Mobile/tr
 - on devrait trouver une ligne qui commence par "le corps encore "
 - selon le code cela devrait afficher le corps de la réponse HTTP (`response.errorBody().string()`)
 
-Dans un fichier **double-errorBody.md**, indique ce que tu observes, ce que tu comprends et en quoi il faut faire attention:
+Dans un fichier **double-errorBody.md**, indique ce que tu observes, ce que tu comprends et à quoi il faut faire attention:
 ```md showLineNumbers
 # comportement observé du code
 bli bla blo

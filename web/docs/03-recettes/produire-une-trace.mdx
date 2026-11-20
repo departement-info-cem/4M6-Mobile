@@ -4,16 +4,16 @@ hide_table_of_contents: true
 
 # Produire une trace d'exécution
 
-Si un as un morceau de code, on peut souhaiter savoir dans quel ordre les instructions sont exécutées.
+Si tu as un morceau de code, on peut souhaiter savoir dans quel ordre les instructions sont exécutées.
 
 ## Principe
 
-On veut accomplir 2 éléments principaux :
+On veut accomplir 3 éléments principaux :
 1. indiquer quelles lignes de code s'exécutent dans quel ordre
 2. indiquer les effets de chaque ligne de code
 3. indiquer la pile d'appels
 
-##Exemple simple
+## Exemple simple
 
         <Row>
 
@@ -83,7 +83,7 @@ On veut accomplir 2 éléments principaux :
 
         | ligne exécutée    | effet                            | pile d'appels   |
         |-------------------|----------------------------------|-----------------|
-        | for (i in 1..3) | i parcourt l'interval 1, 2, 3 | main      |
+        | for (i in 1..3) | i parcourt l'intervalle 1, 2, 3 | main      |
         | if (i % 2 == 0) | i: 1 <br /> i%2 vaut 1        | main      |
         | println("ah ben ah ben, c'est impair " + i) | i: 1 <br /> affiche "ah ben ah ben, c'est impair 1" | main |
         | for (i in 1..3) | i rendu à 2 | main      |
@@ -145,7 +145,7 @@ On veut accomplir 2 éléments principaux :
 
 ## Réseau
 
-    On veut faire la trace d'exécution lorsqu'on ouvre l'application client, en assumant que le serveur roule et que tout se passe bien.
+    On veut faire la trace d'exécution lorsqu'on ouvre l'application client, en supposant que le serveur roule et que tout se passe bien.
 
         <Row>
             <Column>
@@ -222,7 +222,7 @@ On veut accomplir 2 éléments principaux :
         Afin de valider ta trace, tu vas utiliser le débogueur de ton IDE préféré.
         1. place un point d'arrêt sur la première ligne qui s'exécute
         2. lance l'exécution en mode débogage
-        3. saute d'une ligne en une ligne pour voir si ta trace est correcte
+        3. saute de ligne en ligne pour voir si ta trace est correcte
 
         Si tu te rends à la fin de l'exécution et que toutes tes valeurs étaient bonnes, tu as bien compris ce que fait le code.
 

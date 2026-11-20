@@ -71,7 +71,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
 
-    // Gestionnaire de Focus, permet de relacher le focus en cas de besoin
+    // Gestionnaire de Focus, permet de relâcher le focus en cas de besoin
     val focusManager = LocalFocusManager.current
     //focusManager.clearFocus()
 
@@ -125,7 +125,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                             Text("Illustre l'effet d'une erreur")
                         }
                     },
-                    trailingIcon = { // On ajoute une petite icone à la fin du champs en cas d'erreur
+                    trailingIcon = { // On ajoute une petite icône à la fin du champ en cas d'erreur
                         if (isFirstNameError) {
                             Icon(
                                 imageVector = Icons.Default.Error,
@@ -221,7 +221,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     Text(text = "ENVOYER")
                 }
                 Button(
-                    onClick = { // On met le booléan signalant une erreur à True et on réclame le focus sur le champs prénom
+                    onClick = { // On met le booléen signalant une erreur à True et on réclame le focus sur le champs prénom
                         isFirstNameError = true
                         firstNameFocusRequester.requestFocus()
                     }

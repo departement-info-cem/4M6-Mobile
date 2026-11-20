@@ -36,7 +36,7 @@ Recettes à faire:
 
 :::info Séance 1
 
-Nous allons montrer comment partir le serveur. Comment mettre un point d'arrêt. À quel endroit est le code correspondant aux différentes URLs.
+Nous allons montrer comment démarrer le serveur. Comment mettre un point d'arrêt. À quel endroit est le code correspondant aux différentes URLs.
 
 Nous allons voir également comment envoyer des requêtes au serveur avec le logiciel Bruno.
 
@@ -53,7 +53,7 @@ Vous devrez avancer vos exercices sur les serveurs. Vous devriez avoir programm�
 Complétez l'exercice préparatoire: Trace client-serveur. Développez la trace dans un fichier .md et montrez-la au professeur avant de quitter! Au besoin, référez-vous à la recette "Produire une trace d'exécution".
 
 
-Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous êtes desormais en mesure d'implémenter la suppression de tâche dans le serveur dans le cadre du TP3.
+Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous êtes désormais en mesure d'implémenter la suppression de tâche dans le serveur dans le cadre du TP3.
 
 :::
 
@@ -67,7 +67,7 @@ Maintenant que vous connaissez bien la structure d'un serveur Spring Boot, vous 
 
 1. Créez un projet Spring Boot avec Spring Initializr
 2. En vous inspirant de la recette [Spring Boot 2](https://info.cegepmontpetit.ca/4M6-Mobile/recettes/spring-02-controleur), ajoutez un contrôleur qui retourne une chaîne de caractères
-3. Utiliser le navigateur pour accéder à l'adresse http://localhost:8080/
+3. Utilisez le navigateur pour accéder à l'adresse http://localhost:8080/
 
 ## Exercice Post et Bruno <Etiquette type="main" />
 
@@ -80,7 +80,7 @@ Le tout renvoie **texte** répété autant de fois que nécessaire pour atteindr
 - taille vaut 10
 - le contrôleur renvoie la string "pipopipopi"
 
-Pour tester votre code, utiliser Bruno pour déclencher le contrôleur et valider votre code.
+Pour tester votre code, utilisez Bruno pour déclencher le contrôleur et valider votre code.
 
 
 
@@ -103,7 +103,7 @@ public BigInteger fibonacci(int n){}
 Dans cet exercice, on veut:
 - que tu montes un serveur dans un dossier **CalculMethodes**
 - que tu implémentes une méthode dans ton contrôleur pour chaque méthode HTTP
-  - un GET sur l'url "/api/chose" qui renvoit une liste de 10 choses (10 string)
+  - un GET sur l'url "/api/chose" qui renvoie une liste de 10 choses (10 chaînes)
   - un POST sur l'url "/api/chose" qui ajoute une chose à la liste
   - un PUT sur l'url "/api/chose/\{id\}" qui ne fait rien
   - un DELETE sur l'url "/api/chose" qui vide la liste
@@ -111,7 +111,7 @@ Dans cet exercice, on veut:
 
 ## Exercice de compréhension <Etiquette type="main" />
 
-Etant donné le code suivant pour un contrôleur Spring Boot
+Étant donné le code suivant pour un contrôleur Spring Boot
 
 ```java showLineNumbers
 @Controller
@@ -232,9 +232,9 @@ Faites la trace pour chacun des cas suivants :
 
 Enfin, faites la trace du prochain cas en tenant compte des éléments suivants : 
 * On envoie une requête avec l'URL suivante : *http://monsiteweb.com/livres*
-* On interroge le serveur pour obtenir l'ensemble des publications de Franck Herbert entre 1970 et 1972
+* On interroge le serveur pour obtenir l'ensemble des publications de Frank Herbert entre 1970 et 1972
 * Les publications correspondantes sont les suivantes :
-    * "Dune" publiée aux Éditions Robert Laffont en 1970 
+    * "Dune" publié aux Éditions Robert Laffont en 1970 
     * "Le Messie de Dune" publié aux Éditions Robert Laffont en 1972
 
 ::::

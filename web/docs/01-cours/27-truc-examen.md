@@ -18,7 +18,7 @@ Au-delà de ce que tu sais faire ou pas, c’est important de bien utiliser ton 
 
 Préparation au début de l’examen :
 
-1. Lire tout l’énoncé au début de l’examen, pendant ta lecture, identifie les questions qui sont indépendantes les unes des autres et marque-les comme :
+1. Lis tout l’énoncé au début de l’examen. Pendant ta lecture, identifie les questions qui sont indépendantes les unes des autres et marque-les comme :
    - <Highlight color="tip">Ok</Highlight> : je suis sûr d’être capable d’y répondre
    - <Highlight color="caution">Bof</Highlight> : je ne suis pas sûr mais en y réfléchissant c’est peut-être possible
    - <Highlight color="danger">Ko</Highlight>: aucune chance que je sois capable de répondre à ça
@@ -39,7 +39,7 @@ Aucune loi ne te force à commencer par la première question.
 
 Tu devrais plutôt commencer par ce qui augmente le plus vite ta note.
 
-1. Dans les questions marquées <Highlight color="tip">Ok</Highlight>, choisis celle qui te semble donner le meilleur rapport points/temps nécessaire. Au bout du temps logique (mettons 1 point = 9 minutes), Tu dois évaluer si tu t’en vas dans le mur ou si tu as une chance d’y arriver. Si tu penses que ça s’annonce mal, passe à la prochaine.
+1. Dans les questions marquées <Highlight color="tip">Ok</Highlight>, choisis celle qui te semble donner le meilleur rapport points/temps nécessaire. Au bout du temps logique (mettons 1 point = 9 minutes), tu dois évaluer si tu t’en vas dans le mur ou si tu as une chance d’y arriver. Si tu penses que ça s’annonce mal, passe à la prochaine.
 2. Répète jusqu’à épuisement des questions <Highlight color="tip">Ok</Highlight>.
 3. S’il reste des questions <Highlight color="tip">Ok</Highlight> non finies, il faut réévaluer si :
    - tu reviens dessus pour gagner des points

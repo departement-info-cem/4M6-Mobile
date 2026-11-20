@@ -13,7 +13,7 @@ Un compte a été créé pour vous dans le système. Si vous n'avez pas reçu vo
 
 ### Suggestions pour commencer
 
-- Explorez l’application : connectez-vous, explorer les pages.
+- Explorez l’application : connectez-vous, explorez les pages.
 - Familiarisez-vous avec les différentes requêtes Postman. Pas la peine d’essayer d’utiliser les requêtes Admin, elles sont pour la mise en place de l’exercice, ce n’est pas là que la vulnérabilité est située.
 - Essayez d’identifier l’endroit dans le code du serveur qui vous semble vulnérable (vous pouvez confirmer avec votre enseignant quand vous pensez avoir trouvé).
 

@@ -43,7 +43,7 @@ On parlera de la confusion entre données et commandes qui arrive par le biais d
 Paradoxalement, les injections sont aussi les moins susceptibles d'arriver sur des systèmes récents:
 
 - La plupart des frameworks récents contiennent des protections
-- Pour injection SQL, quand on utilise un ORM comme Hibernate, SpringData ou EntityFramework, on est protégés
+- Pour l'injection SQL, quand on utilise un ORM comme Hibernate, SpringData ou EntityFramework, on est protégés
 - Pour l'injection Javascript, Angular, Vue ou encore React vont par défaut désactiver les commandes JS avant de les inclure dans la page.
 
 Les systèmes exposés sont habituellement:
@@ -69,7 +69,7 @@ Essayez d'injecter du javascript dans la base de données du serveur KickMyB et 
 
 Dans un fichier texte **InjectionJavascript.md**, entrainez-vous à :
 - Décrire la FAILLE que vous avez découverte.
-- Dans une session EXPLOIT, décrire étape par étape comment en tirer parti.
+- Dans une section EXPLOIT, décrire étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquer comment vous avez comblé la faille.
 
 ### Exercice ChiffSym <Etiquette type="main" />
@@ -104,11 +104,11 @@ Garde ces notes : Omnivax fait partie des cibles du [TP3](../tp/tp3).
 
 Ouvrez le projet [suivant](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/Omnisus) et prenez le temps de lire le README.
 
-Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion de note Omnisus.
+Votre enseignant va exécuter le serveur sur son poste. Votre mission sera de pirater le serveur qui est sur le poste de votre enseignant pour modifier la note qui vous a été attribuée sur la plateforme de gestion des notes Omnisus.
 
 Dans un fichier texte **Omnisus.md** :
 - Décrivez la FAILLE que vous avez découverte.
-- Dans une session EXPLOIT, décrivez étape par étape comment en tirer parti.
+- Dans une section EXPLOIT, décrivez étape par étape comment en tirer parti.
 - Et comme CORRECTIF, expliquez comment vous avez comblé la faille.
 
 

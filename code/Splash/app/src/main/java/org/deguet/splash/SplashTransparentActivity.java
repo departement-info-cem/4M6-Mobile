@@ -14,7 +14,7 @@ public class SplashTransparentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_transparent);
 
-        // Ceci est un timeout, à rmeplacer par un réel appel au serveur pour vérifier si je suis déjà connecté
+        // Ceci est un timeout, à remplacer par un réel appel au serveur pour vérifier si je suis déjà connecté
         Handler handler = new Handler();
         final Random r = new Random();
         handler.postDelayed(new Runnable() {

@@ -26,7 +26,7 @@ hide_table_of_contents: true
 Les failles réelles ne sont pas toutes dans le code d'un contrôleur :
 
 - **Secrets** : mot de passe de BD dans le repo, dans l'historique git, dans l'APK.
-- **Dépendances** : une librairie vulnérable, ou une librairie qui n'existe pas (nom inventé par une IA, puis enregistré par un attaquant).
+- **Dépendances** : une bibliothèque vulnérable, ou une bibliothèque qui n'existe pas (nom inventé par une IA, puis enregistré par un attaquant).
 - **Configuration** : console H2 ou actuator exposés en prod, traces de pile renvoyées au client.
 - **Transport** : HTTP en clair, `usesCleartextTraffic`, HTTPS.
 - **Abus** : pas de limite sur `/connexion` = essais de mots de passe à volonté.

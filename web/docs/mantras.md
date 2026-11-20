@@ -25,7 +25,7 @@ Il faut :
 Si on l'appelle plus d'une fois, il rend un résultat vide. Stocke le résultat dans une variable pour
 y accéder plusieurs fois.
 
-### "Quand rien tu ne comprendras, le NetworkInterceptor tu ouvriras"
+### "Quand rien tu ne comprendras, le Network Inspector tu ouvriras"
 
 Afin de voir le trafic réseau, on doit ouvrir l'onglet Network Inspector dans la vue App Inspection
 

@@ -20,7 +20,7 @@ La raison principale est que le contrôle d'accès nécessite souvent du travail
 
 (30 minutes) : passer à travers [l'activité sur le contrôle d'accès](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/README.md).
 
-On fournit 4 version plus ou moins sécurisées d'une même application de messagerie:
+On fournit 4 versions plus ou moins sécurisées d'une même application de messagerie:
 - Aucun contrôle d'accès [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/01-OpenBar)
 - Spring Security et authentification [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/02-SpringSecurityBasic)
 - Spring Security, authentification et extraction de l'utilisateur authentifié courant [ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/SpringBootAccessControl/03-SpringSecurityAuth)
@@ -58,14 +58,14 @@ En préparation de l'examen de la prochaine séance, assurez-vous de savoir iden
 
 ### Exercice Curl / Bruno <Etiquette type="main" />
 
-Essaie de reproduire les requêtes décrite en curl dans l'activité avec Bruno.
-- création de 3 comptes utilisateurs alice bobo charlie
+Essaie de reproduire les requêtes décrites en curl dans l'activité avec Bruno.
+- création de 3 comptes utilisateurs alice bob charlie
 - création de 2 messages entre alice et bob
 - requête de l'exploit de 01-OpenBar pour lire les messages de bob et charlie
 
 ### Exercice Exploit <Etiquette type="main" />
 
-Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la banche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
+Vous devez rédiger FAILLE, EXPLOIT et CORRECTIF pour la branche 01-OpenBar de l'activité dans un fichier `01-exploit.md`.
 
 ### Exercice Léo2000 et Omnivax <Etiquette type="main" />
 

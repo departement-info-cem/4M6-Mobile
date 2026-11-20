@@ -5,11 +5,11 @@ hide_table_of_contents: true
 # HTTP 3 - liste d'objets
 
 :::tip
-ATTENTION : L'outil principal de débogage pour les appels réseaux est le network inspector dans Android Studio.
+ATTENTION : L'outil principal de débogage pour les appels réseau est le network inspector dans Android Studio.
 1. Cliquer sur Fichier / File ou le symbole  ☰ en haut à gauche
 2. Choisir View / Tool Windows / AppInspection
 3. Dans la fenêtre AppInspection, choisir l'onglet **Network Inspector**
-4. Tu devrais voir apparaître les appels réseaux de ton application
+4. Tu devrais voir apparaître les appels réseau de ton application
 :::
 
 Regarder la [recette de base](retrofit-01-base) pour les étapes:
@@ -25,20 +25,20 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         Dans le package api, nous allons créer des classes pour facilement accéder aux données.
 
 
-        Si on récupères du JSON, on va avoir les correspondances suivantes:
+        Si on récupère du JSON, on va avoir les correspondances suivantes:
         - si le JSON commence avec `{` on veut récupérer un objet et on aura besoin d'une classe. On aura un **Call\<Pipo\>** et il faudra définir une classe Pipo
         - si le JSON commence avec `[` on veut récupérer une liste et on pourra directement utiliser List. On aura alors un **Call\<List\<Xxxxx\>\>**.
         - si le JSON commence par `"` on va avoir un **Call\<String\>**
-        - si le JSON commence par  une suite de chiffes on va avoir un **Call\<Long\>**
+        - si le JSON commence par  une suite de chiffres on va avoir un **Call\<Long\>**
         - etc.
 
         #### Exemple
         [https://api.github.com/users/octocat/repos](https://api.github.com/users/octocat/repos)
 
-        - on voit que le JSON classe avec `[` donc on veut récupérer une liste d'objets.
+        - on voit que le JSON commence par `[` donc on veut récupérer une liste d'objets.
         - on va donc récupérer une liste de Repo et on crée la classe Repo.
         - pour voir quels champs mettre dedans, on regarde le premier élément de la liste avec le premier `{`
-        - pour la demo, on a ajouté le **name** et le **id**
+        - pour la démo, on a ajouté le **name** et l'**id**
 
         <GHCode
             repo="4M6-Mobile"
@@ -58,8 +58,8 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
 ## RetrofitInstance.kt
 
-        Nous allons modifier notre Retrofit pour utiliser une librairie:
-        - Gson est une librairie codée par Google
+        Nous allons modifier notre Retrofit pour utiliser une bibliothèque:
+        - Gson est une bibliothèque codée par Google
         - Gson gère la traduction entre un objet Kotlin et un objet JSON dans les 2 sens
         - on indique à Retrofit de s'en servir en ajoutant `GsonConverterFactory.create()`
 

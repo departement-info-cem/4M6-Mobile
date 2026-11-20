@@ -14,7 +14,7 @@ Opérations de base avec GitKraken
 - Cloner un repository existant distant
 - Faire un commit
 - Effectuer des push et pull entre le repo local et distant
-- Lister les changements depuis dernier commit
+- Lister les changements depuis le dernier commit
 - Écrire un fichier .gitignore
 
 [Voir règles et procédure](https://departement-info-cem.github.io/git)

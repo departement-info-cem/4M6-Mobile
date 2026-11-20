@@ -14,7 +14,7 @@ EXPLOIT envoyer
 '); UPDATE APPMESSAGE SET CONTENT='<script>alert("Connard")</script>'; --
 
 Injection SQL : la plupart du temps des systèmes vieux avec SQL direct.
-Se repose sur le fait que les développeurs contruise la requête en faisant le + de morceaux à eux
+Se repose sur le fait que les développeurs construisent la requête en faisant le + de morceaux à eux
 et de morceaux de l'utilisateur. 
 Prévenu par PreparedStatement, ORM, la plupart des plateformes modernes
 
@@ -29,7 +29,7 @@ qui font bien attention.
 
 
 SQL avec des + 
-Parametres
+Paramètres
 PreparedStatement
 Plateforme Middleware accéder aux données
 

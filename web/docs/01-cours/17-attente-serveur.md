@@ -26,7 +26,7 @@ OPTIONNEL : Regardez l'exemple de Google concernant les listes avec [swipe to re
 
 On discutera du besoin d'indiquer à l'utilisateur qu'un accès réseau est en cours pour éviter de la frustration et le fait que l'utilisateur envoie plusieurs fois une même requête.
 
-On discutera les besoins d'avoir une action de rafraîchissement, en particulier si les informations d'une page peuvent être modifiées par un tiers.
+On discutera des besoins d'avoir une action de rafraîchissement, en particulier si les informations d'une page peuvent être modifiées par un tiers.
 
 On regardera le code des exemples **[ici](https://github.com/departement-info-cem/4M6-Mobile/tree/main/code/ComposeWaitRefresh)** en cours. En particulier, on prendra l'exemple  et on identifiera les éléments importants pour un swipe to refresh.
 
@@ -48,4 +48,4 @@ Faites la programmation nécessaire pour que quand on appuie sur le bouton, le t
 
 Créez un projet appelé **AttenteB**.
 
-Implantez un "tirer pour rafraîchir" et modifier le contenu de la liste à chaque fois avec un ensemble de 100 nombres entiers tirés au hasard entre 333 et 444.
+Implantez un "tirer pour rafraîchir" et modifiez le contenu de la liste à chaque fois avec un ensemble de 100 nombres entiers tirés au hasard entre 333 et 444.

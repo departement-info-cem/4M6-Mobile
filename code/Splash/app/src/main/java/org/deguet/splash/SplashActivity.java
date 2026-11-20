@@ -21,7 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         // call finish before startActivity or set nohistory in manifest
 
         Toast.makeText(this, "Start Splash", Toast.LENGTH_SHORT).show();
-        // Ceci est un timeout, à rmeplacer par un réel appel au serveur pour vérifier si je suis déjà connecté
+        // Ceci est un timeout, à remplacer par un réel appel au serveur pour vérifier si je suis déjà connecté
         Handler handler = new Handler();
         final Random r = new Random();
         handler.postDelayed(new Runnable() {

@@ -44,7 +44,7 @@ Vous devez commencer la programmation de la liste de votre projet.
 - Créez un fichier **trace-bouton.md** pour y mettre la réponse à cet exercice.  
 - En suivant les instructions de la recette sur les [traces d'exécution](https://info.cegepmontpetit.ca/3N5-Prog3/recettes/aa-produire-une-trace),
 - Produisez la trace d'exécution du code suivant **sans exécuter le code** si vous cliquiez 2 fois sur le bouton.
-- Qu'est ce qui serait affiché dans logcat après avoir parti l'application et cliqué le bouton 2 fois?
+- Qu'est-ce qui serait affiché dans logcat après avoir démarré l'application et cliqué sur le bouton 2 fois?
 
 ```kotlin showLineNumbers
 class MainActivity : ComponentActivity() {

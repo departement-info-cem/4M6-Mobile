@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         )
         RetrofitUtil.get().waitAMinute().enqueue(object : Callback<String?> {
             override fun onResponse(call: Call<String?>?, response: Response<String?>?) {
-                // si on recoit une reponse du serveur, premier truc : on ferme le dialogue
+                // si on reçoit une réponse du serveur, premier truc : on ferme le dialogue
                 progressD!!.dismiss()
                 Toast.makeText(getApplicationContext(), "Yes chargement", Toast.LENGTH_SHORT).show()
             }

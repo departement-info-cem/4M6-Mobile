@@ -1,6 +1,6 @@
 ---
 title: Multilingue
-description: Multilingue I18N - resources dans Android
+description: Multilingue I18N - ressources dans Android
 hide_table_of_contents: true
 ---
 

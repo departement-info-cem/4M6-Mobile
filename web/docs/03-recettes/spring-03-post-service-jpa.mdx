@@ -64,7 +64,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
         Nous allons ensuite avoir un *repository* pour accéder à la base de données. Il s'agit
         d'un objet qui fournit des opérations dans la BD.
 
-        On appelle cela parfois également un *Data Access Object* ou encore DAO (comme dans la librairie du TP3 de 3N5).
+        On appelle cela parfois également un *Data Access Object* ou encore DAO (comme dans la bibliothèque du TP3 de 3N5).
 
         Dans notre application, on souhaite proposer uniquement 2 opérations aux utilisateurs :
         1. ajouter un truc en validant qu'il n'y a pas déjà un truc avec la même chose
@@ -121,7 +121,7 @@ Le code de cette recette est disponible [ici](https://github.com/departement-inf
 
                   Les éléments importants ici pour Spring Boot:
                   - on peut aussi injecter notre service dans les tests, chouette
-                  - on doit partir une instance de Spring Boot avec l'annotation **@SpringBootTest** cela donne par exemple le contexte pour l'injection de dépendance
+                  - on doit démarrer une instance de Spring Boot avec l'annotation **@SpringBootTest** cela donne par exemple le contexte pour l'injection de dépendance
                   - on veut tester sur une base de données qui n'est pas celle du système, ici on fournit un autre fichier de propriétés avec une BD en mémoire vive,
                   que l'on spécifie avec **@TestPropertySource** :
 

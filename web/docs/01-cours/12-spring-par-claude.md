@@ -49,7 +49,7 @@ En mode plan, donne l'API du TP2 (copiée dans `docs/API-TP2.md`) et `ACCES.md` 
 - au moins un test JUnit par service, et un test par règle de `ACCES.md`;
 - **aucun état dans les contrôleurs**.
 
-Fais-le commit dans `serveur/`.
+Demande-lui de commiter dans `serveur/`.
 
 ## Exercice 3 : relecture guidée <Etiquette type="main" />
 

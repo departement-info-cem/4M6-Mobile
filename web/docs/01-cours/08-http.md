@@ -46,7 +46,7 @@ On expliquera comment démarrer le serveur du TP2:
 On expliquera à quoi servent les différentes classes de transfert dans la **[bibliothèque de DTO ou classes de transfert](https://github.com/departement-info-cem/KickMyB-Library)**. On montrera comment inclure la bibliothèque dans votre projet:
 
 - Ajout du repository [Jitpack](https://jitpack.io/) (permet d'accéder à un projet Github sans qu'il soit déployé sur un repo Maven)
-- Ajout de la librairie et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
+- Ajout de la bibliothèque et format de la dépendance : 'com.github.**compte-github**:**repo-github:hash-du-commit**'
 - Exemple :  implementation 'com.github.departement-info-cem:KickMyB-Library:9298b57'  
 
 :::
@@ -124,7 +124,7 @@ Créez un projet appelé **RetrofitGithub** dans lequel vous créerez un service
 
 Chaque élément du LazyColumn doit afficher les champs "name" et "description" ainsi qu'un bouton qui mène à l'URL (champ html_url) (doit fonctionner).
 
-Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4M6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4M6-Mobile/` et naviguez le site pour retrouver cet exercice-ci! ♻️
+Une fois que ça fonctionne, appuyez sur votre bouton pour accéder à la page du cours 4M6-Mobile, cliquez sur le lien bleu `info.cegepmontpetit.ca/4M6-Mobile/` et naviguez sur le site pour retrouver cet exercice-ci! ♻️
 
 ##  DTO - Exercice de compréhension <Etiquette type="main" />
 
